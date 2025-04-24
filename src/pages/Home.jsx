@@ -1,12 +1,15 @@
 import React from "react";
 import HeadInfo from "../components/HeadInfo";
-import HeadNav from "../components/HeadNav";
+import HeadeIso from "../components/HeadIso";
+import NavBar from "../components/NavBar";
+
 
 const Home = () => {
   return (
     <>
       <HeadInfo />
-      <HeadNav />
+      <HeadeIso />
+      <NavBar/>
     </>
   );
 };
