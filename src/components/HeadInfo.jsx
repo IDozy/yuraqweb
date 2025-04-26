@@ -10,6 +10,7 @@ import {
 } from "@mui/icons-material";
 
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 const HeadInfo = () => {
   return (
@@ -36,13 +37,12 @@ const HeadInfo = () => {
                 alignItems={{ xs: "flex-start", sm: "center" }}
                 justifyContent={{ xs: "flex-start", sm: "flex-end" }}
               >
-                <MailIcon />
-                <Typography variant="body2">
-                  escribanos: ventas@mphuyuyuraq.com
-                </Typography>
+              
+                <AccessTimeIcon/>
+                Lunes - Viernes: 8:00 am - 1:00 pm & 2:00 pm - 5:00 pm
                 <PhoneIcon />
-                +51 985632123
-                <LocationOnIcon /> Jr. Sor Manuela Gil 2, Cajamarca
+                976865540 // 978199469
+                <LocationOnIcon /> Oficina: Jr. Sor Manuela Gil 2, Cajamarca
               
                 <a
                   href="https://web.facebook.com/minphuyuii"

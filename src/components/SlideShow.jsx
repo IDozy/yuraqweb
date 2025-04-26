@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const carouselItems = [
   {
-    src: '/Slide3.JPG',
+    src: '/Slide1.JPG',
     alt: 'Primera imagen',
     title: 'Primera imagen',
     description: 'Descripción breve de la primera imagen.'
@@ -17,7 +17,7 @@ const carouselItems = [
     description: 'Texto de ejemplo para la segunda imagen.'
   },
   {
-    src: '/Slide1.JPG',
+    src: '/Home6.JPG',
     alt: 'Tercera imagen',
     title: 'Tercera imagen',
     description: 'Algo más aquí para la tercera imagen.'

@@ -2,6 +2,7 @@ import React from "react";
 import HeadInfo from "../components/HeadInfo";
 import HeadeIso from "../components/HeadIso";
 import NavBar from "../components/NavBar";
+import CarrouselAbout from "../components/CarrouselAbout";
 
 
 
@@ -11,6 +12,7 @@ const About = () => {
       <HeadInfo />
       <HeadeIso />
       <NavBar/>
+      <CarrouselAbout/>
       
     </>
   );
