@@ -14,6 +14,8 @@ import { Link } from "react-router-dom";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
 import VerifiedIcon from "@mui/icons-material/Verified";
+import { ForwardToInbox } from "@mui/icons-material";
+import { Mail } from "lucide-react";
 
 const HeadeIso = () => {
  
@@ -40,7 +42,7 @@ const HeadeIso = () => {
   >
     {/* Logo */}
     <Grid item xs={12} md={4} display="flex" justifyContent="flex-start">
-      <Box component="img" src="/logo.png" alt="Logo Mycal" height={80} />
+      <Box component="img" src="/Logo_Phuyuyuraq.jpg" alt="Logo Mycal" height={170} />
     </Grid>
 
     
@@ -49,9 +51,9 @@ const HeadeIso = () => {
     {/* ISO */}
     <Grid item xs={12} md={4} display="flex" justifyContent="flex-end">
     <Box display="flex" alignItems="center" gap={2}>
-        <EmailIcon sx={{ color: "#00ACC1", fontSize: 40 }} />
+    <Mail color="var(--color-primary)" size={65} strokeWidth={.8} />
         <Box>
-          <Typography variant="body1" fontWeight="bold" color="#00ACC1">
+          <Typography variant="body1" fontWeight="bold" color="var(--color-primary)">
             ESCRÍBANOS
           </Typography>
           <Typography variant="body1" color="#37474F">
@@ -60,15 +62,9 @@ const HeadeIso = () => {
         </Box>
       </Box>
       <Box display="flex" alignItems="center" gap={2}>
-        <Box component="img" src="/iso.png" alt="Certificado ISO" height={60} />
-        <Box>
-          <Typography variant="body1" fontWeight="bold" color="#00ACC1">
-            RUMBO AL
-          </Typography>
-          <Typography variant="body1" color="#37474F">
-            ISO
-          </Typography>
-        </Box>
+        <Box component="img" src="/Certificacion_ISO9001.png" alt="Certificado ISO" height={90} mx={2}/>
+        <Box component="img" src="/Certificacion_OHSAS.png" alt="Certificado ISO" height={80} />
+        
       </Box>
     </Grid>
   </Grid>

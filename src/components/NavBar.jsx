@@ -1,56 +1,52 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Menu,
-  MenuItem,
-  Toolbar,
-  Container,
-} from "@mui/material";
+import { Box, Button, Menu, MenuItem, Toolbar, Container } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const openMenu = Boolean(anchorEl);
 
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  const handleMenu = (event) => setAnchorEl(event.currentTarget);
+  const handleClose = () => setAnchorEl(null);
 
   return (
     <Box sx={{ backgroundColor: "#f5f5f5", py: 1 }}>
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" disableGutters>
         <Box
           sx={{
-            backgroundColor: "#002f6c",
-            px: 2,
-            py: 1,
-            mt: -5, // 👈 Subir el navbar
+            backgroundColor: "#000",
             position: "relative",
             zIndex: 10,
-           
+            mt: -5,
           }}
         >
-          <Toolbar disableGutters sx={{ justifyContent: "space-between", flexWrap: "wrap" }}>
-           
+          <Toolbar
+            disableGutters
+            sx={{
+              minHeight: "64px !important",
+              height: "64px",
 
-            <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 1 }}>
-              <Button sx={{ color: "#fff" }} component={Link} to="https://mycal.com.pe/">
-                INICIO
-              </Button>
-              <Button sx={{ color: "#fff" }} component={Link} to="https://mycal.com.pe/la-empresa/">
-                LA EMPRESA
-              </Button>
+              justifyContent: "space-between",
+              display: "flex",
+            }}
+          >
+            {/* Sección izquierda: Menú de navegación */}
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                height: "100%",
+
+                flexGrow: 1,
+              }}
+            >
+              <NavButton to="https://mycal.com.pe/" label="INICIO" />
+              <NavButton
+                to="https://mycal.com.pe/la-empresa/"
+                label="LA EMPRESA"
+              />
               <Button
-                sx={{
-                  color: "#fff",
-                  backgroundColor: "#00e0dd",
-                  "&:hover": { backgroundColor: "#00bfbf" },
-                }}
+                sx={navButtonStyle("var(--color-primary)")}
                 onClick={handleMenu}
               >
                 PRODUCTOS
@@ -74,21 +70,32 @@ const NavBar = () => {
                   </MenuItem>
                 ))}
               </Menu>
-              <Button sx={{ color: "#fff" }} component={Link} to="https://mycal.com.pe/nuestros-clientes/">
-                NUESTROS CLIENTES
-              </Button>
-              <Button sx={{ color: "#fff" }} component={Link} to="https://mycal.com.pe/gestion-de-seguridad/">
-                GESTIÓN DE SEGURIDAD
-              </Button>
-              <Button sx={{ color: "#fff" }} component={Link} to="https://mycal.com.pe/tu-despacho/">
-                TU DESPACHO
-              </Button>
+              <NavButton
+                to="https://mycal.com.pe/nuestros-clientes/"
+                label="NUESTROS CLIENTES"
+              />
+              <NavButton
+                to="https://mycal.com.pe/gestion-de-seguridad/"
+                label="GESTIÓN DE SEGURIDAD"
+              />
+              <NavButton
+                to="https://mycal.com.pe/tu-despacho/"
+                label="TU DESPACHO"
+              />
+            </Box>
+
+            {/* Sección derecha: Botón de WhatsApp */}
+            <Box sx={{ height: "100%", display: "flex", alignItems: "center" }}>
               <Button
                 sx={{
                   backgroundColor: "#8dc63f",
                   color: "#fff",
                   fontWeight: "bold",
-                  ml: 1,
+                  px: 2,
+                  height: "64px",
+                  borderRadius: 0,
+                  textTransform: "uppercase",
+                  fontSize: "0.85rem",
                   "&:hover": {
                     backgroundColor: "#76b82a",
                   },
@@ -112,5 +119,26 @@ const NavBar = () => {
     </Box>
   );
 };
+
+const navButtonStyle = (bgColor = "transparent") => ({
+  color: "#fff",
+  backgroundColor: bgColor,
+  textTransform: "uppercase",
+  fontWeight: 500,
+  fontSize: "0.85rem",
+  height: "64px",
+  borderRadius: 0,
+  px:3.4,
+  transition: "background-color 0.3s",
+  "&:hover": {
+    backgroundColor: "var(--color-primary)",
+  },
+});
+
+const NavButton = ({ to, label }) => (
+  <Button sx={navButtonStyle()} component={Link} to={to}>
+    {label}
+  </Button>
+);
 
 export default NavBar;

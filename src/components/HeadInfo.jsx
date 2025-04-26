@@ -7,9 +7,9 @@ const HeadInfo = () => {
     <Box>
       <Box
         sx={{
-          backgroundColor: "#003366",
+          backgroundColor: "var(--color-primary)", 
           color: "white",
-          py: 1,
+          py: 0.5,
         }}
       >
         <Container maxWidth="lg">
@@ -20,7 +20,7 @@ const HeadInfo = () => {
             justifyContent="space-between"
           >
             <Grid item xs={12} md={6}>
-              <Typography variant="h6">MYCAL</Typography>
+             
             </Grid>
             <Grid item xs={12} md={6}>
               <Stack
