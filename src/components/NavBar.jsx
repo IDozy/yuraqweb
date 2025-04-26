@@ -40,10 +40,10 @@ const NavBar = () => {
                 flexGrow: 1,
               }}
             >
-              <NavButton to="https://mycal.com.pe/" label="INICIO" />
+              <NavButton to="/" label="INICIO" />
               <NavButton
-                to="https://mycal.com.pe/la-empresa/"
-                label="LA EMPRESA"
+                to="/nosotros"
+                label="NUESTRA EMPRESA"
               />
               <Button
                 sx={navButtonStyle("var(--color-primary)")}
@@ -72,15 +72,15 @@ const NavBar = () => {
               </Menu>
               <NavButton
                 to="https://mycal.com.pe/nuestros-clientes/"
-                label="NUESTROS CLIENTES"
+                label="NUESTRAS PLANTAS"
               />
               <NavButton
                 to="https://mycal.com.pe/gestion-de-seguridad/"
                 label="GESTIÓN DE SEGURIDAD"
               />
               <NavButton
-                to="https://mycal.com.pe/tu-despacho/"
-                label="TU DESPACHO"
+                to="/contacto"
+                label="CONTÁCTANOS"
               />
             </Box>
 
@@ -110,7 +110,7 @@ const NavBar = () => {
                   />
                 }
               >
-                ¡CONSULTAR AHORA!
+                ¡CONSULTA AHORA!
               </Button>
             </Box>
           </Toolbar>

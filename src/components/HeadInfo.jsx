@@ -1,13 +1,22 @@
 import React from "react";
 import { Box, Button, Container, Typography, Grid, Stack } from "@mui/material";
-import { Mail, Phone, Facebook, Twitter, Instagram } from "@mui/icons-material";
+import {
+  MailOutline as MailIcon,
+  PhoneOutlined as PhoneIcon,
+  Facebook as FacebookIcon,
+  Twitter as TwitterIcon,
+  Instagram as InstagramIcon,
+  LinkedIn as LinkedInIcon,
+} from "@mui/icons-material";
+
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const HeadInfo = () => {
   return (
     <Box>
       <Box
         sx={{
-          backgroundColor: "var(--color-primary)", 
+          backgroundColor: "var(--color-primary)",
           color: "white",
           py: 0.5,
         }}
@@ -19,9 +28,7 @@ const HeadInfo = () => {
             alignItems="center"
             justifyContent="space-between"
           >
-            <Grid item xs={12} md={6}>
-             
-            </Grid>
+            <Grid item xs={12} md={6}></Grid>
             <Grid item xs={12} md={6}>
               <Stack
                 direction={{ xs: "column", sm: "row" }}
@@ -29,12 +36,31 @@ const HeadInfo = () => {
                 alignItems={{ xs: "flex-start", sm: "center" }}
                 justifyContent={{ xs: "flex-start", sm: "flex-end" }}
               >
-                <Mail />
+                <MailIcon />
                 <Typography variant="body2">
-                  escribanos@ventas@mycal.com.pe
+                  escribanos: ventas@mphuyuyuraq.com
                 </Typography>
-                <Phone />
+                <PhoneIcon />
+                +51 985632123
+                <LocationOnIcon /> Jr. Sor Manuela Gil 2, Cajamarca
+              
+                <a
+                  href="https://web.facebook.com/minphuyuii"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FacebookIcon sx={{ color: "white", fontSize: 28 }} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/minera-phuyu-yuraq-ll-eirl-a6991064/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkedInIcon sx={{ color: "white", fontSize: 28 }} />
+                </a>
+
               </Stack>
+            
             </Grid>
           </Grid>
         </Container>
