@@ -25,21 +25,24 @@ const HeadInfo = () => {
         <Container maxWidth="lg">
           <Grid
             container
-            spacing={2}
+            spacing={1}
             alignItems="center"
-            justifyContent="space-between"
+            justifyContent="space-around"
+            
           >
             <Grid item xs={12} md={6}></Grid>
             <Grid item xs={12} md={6}>
               <Stack
                 direction={{ xs: "column", sm: "row" }}
-                spacing={1}
+                spacing={2.5}
                 alignItems={{ xs: "flex-start", sm: "center" }}
                 justifyContent={{ xs: "flex-start", sm: "flex-end" }}
               >
               
-                <AccessTimeIcon/>
-                Lunes - Viernes: 8:00 am - 1:00 pm & 2:00 pm - 5:00 pm
+                <AccessTimeIcon/> 
+                <p>
+                  Lunes - Viernes: 8:00 am - 1:00 pm & 2:00 pm - 5:00 pm
+                  </p>
                 <PhoneIcon />
                 976865540 // 978199469
                 <LocationOnIcon /> Oficina: Jr. Sor Manuela Gil 2, Cajamarca

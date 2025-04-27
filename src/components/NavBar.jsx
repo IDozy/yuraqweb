@@ -128,7 +128,7 @@ const navButtonStyle = (bgColor = "transparent") => ({
   fontSize: "0.85rem",
   height: "64px",
   borderRadius: 0,
-  px:3.4,
+  px:3,
   transition: "background-color 0.3s",
   "&:hover": {
     backgroundColor: "var(--color-primary)",

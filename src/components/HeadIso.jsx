@@ -51,8 +51,8 @@ const HeadeIso = () => {
     {/* ISO */}
     <Grid item xs={12} md={4} display="flex" justifyContent="flex-end">
     <Box display="flex" alignItems="center" gap={2}>
-    <Mail color="var(--color-primary)" size={65} strokeWidth={.8} />
-        <Box>
+    <Mail className="relative -top-[15px]" color="var(--color-primary)" size={65} strokeWidth={.8} />
+          <Box position="relative" top="-15px">
           <Typography variant="body1" fontWeight="bold" color="var(--color-primary)">
             ESCRÍBANOS
           </Typography>
