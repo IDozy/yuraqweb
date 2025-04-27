@@ -32,7 +32,7 @@ export default function Contacto() {
           <Room color="error" sx={{ mr: 2 }} />
           <Box>
             <Typography fontWeight="bold">Oficina</Typography>
-            <Typography>Calle Coronel Andrés Reyes 360, San Isidro, Lima, Perú</Typography>
+            <Typography>Jr. Sor Manuela Gil 322, Cajamarca, Perú</Typography>
           </Box>
         </Box>
 
@@ -40,15 +40,15 @@ export default function Contacto() {
           <Room color="error" sx={{ mr: 2 }} />
           <Box>
             <Typography fontWeight="bold">Planta</Typography>
-            <Typography>Pampa de fundición Urinsaya II, Callalli, Caylloma, Arequipa</Typography>
+            <Typography>Carretera a Cumbemayo</Typography>
           </Box>
         </Box>
 
         <Box display="flex" alignItems="center" mb={2}>
           <Phone color="error" sx={{ mr: 2 }} />
           <Box>
-            <Typography fontWeight="bold">Teléfono:</Typography>
-            <Typography>(01) 408–0214</Typography>
+            <Typography fontWeight="bold">Teléfonos:</Typography>
+            <Typography>976865540 // 978199469</Typography>
           </Box>
         </Box>
 
@@ -56,7 +56,7 @@ export default function Contacto() {
           <Email color="error" sx={{ mr: 2 }} />
           <Box>
             <Typography fontWeight="bold">Correo:</Typography>
-            <Typography>ventascali@calidra.com.pe</Typography>
+            <Typography>ventascali@mphuyuyuraq.com</Typography>
           </Box>
         </Box>
       </Box>
