@@ -5,8 +5,8 @@ import NavBar from "../components/NavBar";
 import CarrouselAbout from "../components/CarrouselAbout";
 import CardAbout from "../components/CardAbout";
 import ValoresCorporativos from "../components/ValoresCorporativos";
-
-
+import MisionAbout from '../components/MisionAbout';
+import VisionAbout from '../components/VisionAbout';
 const About = () => {
   return (
     <>
@@ -16,6 +16,8 @@ const About = () => {
       <CarrouselAbout/>
       <CardAbout/>
       <ValoresCorporativos/>
+      <MisionAbout/>
+      <VisionAbout/>
     </>
   );
 };

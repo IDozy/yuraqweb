@@ -6,8 +6,8 @@ import Slideshow from "../components/SlideShow";
 import ExpeInfo from "../components/ExpeInfo";
 import Footer from "../components/Footer";
 import CounterHome from "../components/Home/CounterHOme";
-
-
+import WhyHome from "../components/Home/WhyHome";
+import CertifHome from '../components/Home/CertifHome';
 
 const Home = () => {
   return (
@@ -18,6 +18,8 @@ const Home = () => {
       <Slideshow/>
       <ExpeInfo/>
       <CounterHome/>
+      <WhyHome/>
+      <CertifHome/>
       <Footer/>
     
     </>

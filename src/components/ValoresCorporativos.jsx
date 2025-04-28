@@ -23,7 +23,7 @@ const ValoresCorporativos = () => {
   return (
     <Box sx={{ py: 10, px: 4, backgroundColor: "#f9f9f9" }}>
       <Typography variant="h3" align="center" gutterBottom fontWeight="bold">
-        Nuestros Valores
+        Valores Corporativos
       </Typography>
       <Grid container spacing={4} justifyContent="center" alignItems="center">
         {valores.map((valor, index) => {
