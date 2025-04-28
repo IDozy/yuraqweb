@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar";
 import Slideshow from "../components/SlideShow";
 import ExpeInfo from "../components/ExpeInfo";
 import Footer from "../components/Footer";
+import CounterHome from "../components/Home/CounterHOme";
 
 
 
@@ -16,7 +17,9 @@ const Home = () => {
       <NavBar/>
       <Slideshow/>
       <ExpeInfo/>
+      <CounterHome/>
       <Footer/>
+    
     </>
   );
 };
