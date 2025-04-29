@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import CounterHome from "../components/Home/CounterHOme";
 import WhyHome from "../components/Home/WhyHome";
 import CertifHome from '../components/Home/CertifHome';
+import CardCompanyHome from '../components/Home/CardCompanyHome.jsx';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <ExpeInfo/>
       <CounterHome/>
       <WhyHome/>
+      <CardCompanyHome/>
       <CertifHome/>
       <Footer/>
     
