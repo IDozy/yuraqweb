@@ -1,0 +1,114 @@
+.plants-card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .plants-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .plants-card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Eliminamos min-height y usamos padding para controlar el espacio */
+    padding: 2rem 0;
+  }
+  
+  .plants-text-container {
+    flex: 1;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .plants-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  .plants-description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+  
+  .plants-button {
+    align-self: flex-start;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .plants-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  .plants-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 2rem;
+  }
+  
+  .plants-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    max-height: 400px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .plants-card-content {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .plants-text-container {
+      order: 1;
+      padding: 1.5rem;
+    }
+  
+    .plants-image-container {
+      order: 0;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 1.5rem;
+    }
+  
+    .plants-image {
+      border-radius: 0;
+      max-height: 300px;
+    }
+  
+    .plants-title {
+      font-size: 1.5rem;
+    }
+  
+    .plants-description {
+      font-size: 1rem;
+    }
+  
+    .plants-button {
+      align-self: center;
+    }
+  }

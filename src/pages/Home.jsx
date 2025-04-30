@@ -9,6 +9,7 @@ import CounterHome from "../components/Home/CounterHOme";
 import WhyHome from "../components/Home/WhyHome";
 import CertifHome from '../components/Home/CertifHome';
 import CardCompanyHome from '../components/Home/CardCompanyHome.jsx';
+import PlantsProductionHome from '../components/Home/PlantsProductionHome';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <WhyHome/>
       <CardCompanyHome/>
       <CertifHome/>
+      <PlantsProductionHome/>
       <Footer/>
     
     </>
