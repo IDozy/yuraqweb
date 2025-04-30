@@ -64,18 +64,18 @@ const NavBar = () => {
                     key={slug}
                     onClick={handleClose}
                     component={Link}
-                    to={`https://mycal.com.pe/productos/${slug}/`}
+                    to={`/${slug}/`}
                   >
                     {name}
                   </MenuItem>
                 ))}
               </Menu>
               <NavButton
-                to="https://mycal.com.pe/nuestros-clientes/"
+                to="/"
                 label="NUESTRAS PLANTAS"
               />
               <NavButton
-                to="https://mycal.com.pe/gestion-de-seguridad/"
+                to="/"
                 label="GESTIÓN DE SEGURIDAD"
               />
               <NavButton
