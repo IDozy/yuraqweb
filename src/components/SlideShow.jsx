@@ -26,8 +26,8 @@ const carouselItems = [
 
 export default function MyCarousel() {
   return (
-    <div className="w-full relative" style={{ marginTop: '-50px' }}> {/* Aquí usamos margen negativo inline */}
-      <Carousel fade>
+    <div className="w-full " style={{ marginTop: '-50px' }}> {/* Aquí usamos margen negativo inline */}
+      <Carousel fade className="statick">
         {carouselItems.map((item, index) => (
           <Carousel.Item key={index}>
             <img
