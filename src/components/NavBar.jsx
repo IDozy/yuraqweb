@@ -71,12 +71,12 @@ const NavBar = () => {
                 ))}
               </Menu>
               <NavButton
-                to="/"
-                label="NUESTRAS PLANTAS"
+                to="/produccion"
+                label="PLANTAS "
               />
               <NavButton
                 to="/"
-                label="GESTIÓN DE SEGURIDAD"
+                label="NUESTRO COMPROMISO"
               />
               <NavButton
                 to="/contacto"
