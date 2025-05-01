@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function ProductionPlants() {
   const plants = [
     {
-      title: "Planta de Producción en Cumbe Mayo",
+      title: "Centro de Producción Cumbemayo",
       description: "Nuestra planta principal equipada con tecnología de punta, ubicada estratégicamente para abastecer el mercado nacional.",
       image: "/Planta_Cumbemayo.PNG", // Asegúrate de tener esta imagen
     },

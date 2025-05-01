@@ -72,7 +72,7 @@ const NavBar = () => {
               </Menu>
               <NavButton
                 to="/produccion"
-                label="PLANTAS "
+                label="CENTROS  "
               />
               <NavButton
                 to="/"

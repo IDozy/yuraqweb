@@ -22,7 +22,7 @@ export default function HeroEmpresa() {
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
         <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg">
-         Conoce P'huyu Yuraq II
+         Conoce Minera P'huyu Yuraq II
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mb-6 drop-shadow-md">
           La cual fue fundada con el objetivo de ofrecer soluciones de calidad,

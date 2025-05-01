@@ -36,11 +36,11 @@ const ProductionPlantsCard = () => {
       >
         <div className="plants-card-content">
           <div className="plants-text-container">
-            <h2 className="plants-title">Conoce nuestras plantas de producción</h2>
+            <h2 className="plants-title">Conoce nuestras Centros de producción</h2>
             <p className="plants-description">
               Contamos con instalaciones modernas y tecnología de punta para garantizar 
-              la más alta calidad en todos nuestros productos. Nuestras plantas están 
-              diseñadas para maximizar la eficiencia y minimizar el impacto ambiental.
+              la más alta calidad en todos nuestros productos. Nuestras centros de producción están 
+              diseñados para maximizar la eficiencia y minimizar el impacto ambiental.
             </p>
             <button 
               onClick={handleButtonClick}
@@ -48,7 +48,7 @@ const ProductionPlantsCard = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Ver plantas
+              Ver Ubicación
             </button>
           </div>
           <div className="plants-image-container">

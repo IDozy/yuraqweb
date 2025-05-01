@@ -45,7 +45,7 @@ const HeadInfo = () => {
                   </p>
                 <PhoneIcon />
                 976865540 // 978199469
-                <LocationOnIcon /> Oficina: Jr. Sor Manuela Gil 2, Cajamarca
+                <LocationOnIcon /> Oficina: Jr. Sor Manuela Gil K-2, Cajamarca
               
                 <a
                   href="https://web.facebook.com/minphuyuii"
