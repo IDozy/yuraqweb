@@ -3,55 +3,38 @@ import { Box, Button, Menu, MenuItem, Toolbar, Container } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const openMenu = Boolean(anchorEl);
+  const [anchorElProducts, setAnchorElProducts] = React.useState(null);
+  const [anchorElCompromiso, setAnchorElCompromiso] = React.useState(null);
 
-  const handleMenu = (event) => setAnchorEl(event.currentTarget);
-  const handleClose = () => setAnchorEl(null);
+  const openProducts = Boolean(anchorElProducts);
+  const openCompromiso = Boolean(anchorElCompromiso);
+
+  const handleMenuOpen = (setter) => (event) => setter(event.currentTarget);
+  const handleMenuClose = (setter) => () => setter(null);
 
   return (
     <Box sx={{ backgroundColor: "#f5f5f5", py: 1 }}>
       <Container maxWidth="lg" disableGutters>
-        <Box
-          sx={{
-            backgroundColor: "#000",
-            position: "relative",
-            zIndex: 10,
-            mt: -5,
-          }}
-        >
+        <Box sx={{ backgroundColor: "#000", position: "relative", zIndex: 10, mt: -5 }}>
           <Toolbar
             disableGutters
             sx={{
               minHeight: "64px !important",
               height: "64px",
-
               justifyContent: "space-between",
               display: "flex",
             }}
           >
-            {/* Sección izquierda: Menú de navegación */}
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                height: "100%",
-
-                flexGrow: 1,
-              }}
-            >
+            {/* Sección izquierda */}
+            <Box sx={{ display: "flex", alignItems: "center", height: "100%", flexGrow: 1 }}>
               <NavButton to="/" label="INICIO" />
-              <NavButton
-                to="/nosotros"
-                label="NUESTRA EMPRESA"
-              />
-              <Button
-                sx={navButtonStyle("var(--color-primary)")}
-                onClick={handleMenu}
-              >
+              <NavButton to="/nosotros" label="NUESTRA EMPRESA" />
+
+              {/* Productos Menu */}
+              <Button sx={navButtonStyle("var(--color-primary)")} onClick={handleMenuOpen(setAnchorElProducts)}>
                 PRODUCTOS
               </Button>
-              <Menu anchorEl={anchorEl} open={openMenu} onClose={handleClose}>
+              <Menu anchorEl={anchorElProducts} open={openProducts} onClose={handleMenuClose(setAnchorElProducts)}>
                 {[
                   ["MyCal Viva", "mycal-viva"],
                   ["MyCal Hydra", "mycal-hydra"],
@@ -60,31 +43,34 @@ const NavBar = () => {
                   ["MyCal Vial", "mycal-vial"],
                   ["MyCaliza", "mycaliza"],
                 ].map(([name, slug]) => (
-                  <MenuItem
-                    key={slug}
-                    onClick={handleClose}
-                    component={Link}
-                    to={`/${slug}/`}
-                  >
+                  <MenuItem key={slug} onClick={handleMenuClose(setAnchorElProducts)} component={Link} to={`/${slug}/`}>
                     {name}
                   </MenuItem>
                 ))}
               </Menu>
-              <NavButton
-                to="/produccion"
-                label="CENTROS  "
-              />
-              <NavButton
-                to="/"
-                label="NUESTRO COMPROMISO"
-              />
-              <NavButton
-                to="/contacto"
-                label="CONTÁCTANOS"
-              />
+
+              <NavButton to="/produccion" label="CENTROS" />
+
+              {/* Compromiso Menu */}
+              <Button sx={navButtonStyle("var(--color-primary)")} onClick={handleMenuOpen(setAnchorElCompromiso)}>
+                NUESTRO COMPROMISO
+              </Button>
+              <Menu anchorEl={anchorElCompromiso} open={openCompromiso} onClose={handleMenuClose(setAnchorElCompromiso)}>
+                {[
+                  ["Responsabilidad Social", "responsabilidad-social"],
+                  ["Seguridad", "seguridad"],
+                  ["Desarrollo Humano", "desarrollo-humano"],
+                ].map(([name, slug]) => (
+                  <MenuItem key={slug} onClick={handleMenuClose(setAnchorElCompromiso)} component={Link} to={`/${slug}/`}>
+                    {name}
+                  </MenuItem>
+                ))}
+              </Menu>
+
+              <NavButton to="/contacto" label="CONTÁCTANOS" />
             </Box>
 
-            {/* Sección derecha: Botón de WhatsApp */}
+            {/* Botón de WhatsApp */}
             <Box sx={{ height: "100%", display: "flex", alignItems: "center" }}>
               <Button
                 sx={{
@@ -128,7 +114,7 @@ const navButtonStyle = (bgColor = "transparent") => ({
   fontSize: "0.85rem",
   height: "64px",
   borderRadius: 0,
-  px:3,
+  px: 3,
   transition: "background-color 0.3s",
   "&:hover": {
     backgroundColor: "var(--color-primary)",
