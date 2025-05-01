@@ -1,0 +1,57 @@
+.confian-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+  }
+  
+  .confian-left {
+    flex: 1;
+    min-width: 280px;
+    padding: 1rem;
+  }
+  
+  .confian-left h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #222;
+  }
+  
+  .confian-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+    padding: 1rem;
+  }
+  
+  .confian-logo {
+    max-width: 300px;
+    max-height: 150px;
+    object-fit: contain;
+    transition: opacity 1s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .confian-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .confian-left h2 {
+      font-size: 2rem;
+    }
+  
+    .confian-logo {
+      max-width: 200px;
+      max-height: 100px;
+    }
+  }
+  

@@ -11,6 +11,7 @@ import CertifHome from '../components/Home/CertifHome';
 import CardCompanyHome from '../components/Home/CardCompanyHome.jsx';
 import PlantsProductionHome from '../components/Home/PlantsProductionHome';
 import Whatsapp from "../components/whatsappbutton/Whatsapp.jsx";
+import ConfianHome from '../components/Home/ConfianHome.jsx';
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <CardCompanyHome/>
       <CertifHome/>
       <PlantsProductionHome/>
+      <ConfianHome/>
       <Footer/>
       <Whatsapp />
     </>
