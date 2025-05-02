@@ -36,12 +36,11 @@ const NavBar = () => {
               </Button>
               <Menu anchorEl={anchorElProducts} open={openProducts} onClose={handleMenuClose(setAnchorElProducts)}>
                 {[
-                  ["MyCal Viva", "mycal-viva"],
-                  ["MyCal Hydra", "mycal-hydra"],
-                  ["MyCal de Obra", "mycal-de-obra"],
-                  ["MyCal Agrícola", "mycal-agricola"],
-                  ["MyCal Vial", "mycal-vial"],
-                  ["MyCaliza", "mycaliza"],
+                  ["Cal Viva Molida", "cal-viva-molida"],
+                  ["Cal Viva Granulada", "cal-viva-granulada"],
+                  ["Cal Hidratada Industrial", "cal-hidratada-industrial"],
+                  ["Cal Hidratada Agrícola", "cal-hidratada-agricola"],
+                  
                 ].map(([name, slug]) => (
                   <MenuItem key={slug} onClick={handleMenuClose(setAnchorElProducts)} component={Link} to={`/${slug}/`}>
                     {name}

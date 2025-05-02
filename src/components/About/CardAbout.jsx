@@ -31,12 +31,16 @@ const AboutCard = () => {
         viewport={{ once: true }}
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left text-gray-800">
-          Nuestra Historia
+          Conoce Nuestra Historia
         </h2>
         <p className="text-gray-700 text-lg leading-relaxed text-center md:text-left">
-          Desde nuestros inicios, nos hemos dedicado a brindar servicios de calidad,
-          comprometidos con la excelencia y la satisfacción de nuestros clientes.
-          Nuestro crecimiento refleja el esfuerzo y pasión que ponemos en cada proyecto.
+          Teniendo como base el Centro de Producción de Cal Apán Alto, la Sra.
+          Julia Edith Urrutia Cubas, en el año 1993, crea la EMPRESA MINERA
+          P'HUYU YURAQ II EIRL. Luego se proyecta a Cajamarca donde la Empresa
+          cuenta con un Centro de Producción de Cal en el Centro Poblado
+          Puylucana, Baños del Inca y otro Centro de Producción de Cal en Cumbe
+          Mayo, lugar donde está ubicada la Concesión Minera No Metálica ITALO,
+          Cajamarca.
         </p>
       </motion.div>
     </motion.div>
