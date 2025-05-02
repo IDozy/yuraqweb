@@ -7,6 +7,9 @@ import CardAbout from "../components/About/CardAbout";
 import ValoresCorporativos from "../components/About/ValoresCorporativos";
 import MisionAbout from '../components/About/MisionAbout';
 import VisionAbout from '../components/About/VisionAbout';
+import PremiacionSlide from '../components/About/PremiacionSlide';
+
+
 const About = () => {
   return (
     <>
@@ -18,6 +21,7 @@ const About = () => {
       <ValoresCorporativos/>
       <MisionAbout/>
       <VisionAbout/>
+      <PremiacionSlide/>
     </>
   );
 };
