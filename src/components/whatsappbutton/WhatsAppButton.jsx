@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ModalWhatsapp from "./ModalWhatsapp";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./WhatsAppButton.css";
+import "./Whatsappbutton.css";
 
 const WhatsAppButton = ({ imageCompany, companyName }) => {
   const [showModal, setShowModal] = useState(false);
