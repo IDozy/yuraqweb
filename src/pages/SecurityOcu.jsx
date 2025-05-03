@@ -11,7 +11,7 @@ const SecurityOcu = () => {
       <HeadInfo />
       <HeadeIso />
       <NavBar/>
-     
+    
       <Footer/>
     </>
   );

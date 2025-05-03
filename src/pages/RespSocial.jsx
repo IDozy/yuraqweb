@@ -5,6 +5,8 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import SlideSocial from '../components/RespSocial/SlideSocial';
 import ResponCard from '../components/RespSocial/ResponCard';
+import SaludCard from '../components/RespSocial/SaludCard';
+
 
 const RespSocial = () => {
   return (
@@ -14,6 +16,7 @@ const RespSocial = () => {
       <NavBar/>
       <SlideSocial/>
       <ResponCard/>
+      <SaludCard/>
       <Footer/>
     </>
   );
