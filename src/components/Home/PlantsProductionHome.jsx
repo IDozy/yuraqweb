@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
-import './/PlantsProduction.css';
+import './PlantsProduction.css';
 
 const ProductionPlantsCard = () => {
   const ref = useRef(null);
