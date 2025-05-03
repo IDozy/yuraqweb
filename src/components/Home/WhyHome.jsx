@@ -8,7 +8,7 @@ export default function WhyUs() {
     {
       icon: <FaAward size={50} color="#E91E63" />,
       title: "Experiencia",
-      description: "Más de 25 años ofreciendo calidad y compromiso.",
+      description: "Más de 30 años ofreciendo calidad y compromiso.",
     },
     {
       icon: <FaHandshake size={50} color="#3F51B5" />,

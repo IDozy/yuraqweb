@@ -37,7 +37,8 @@ export default function MissionCard() {
           producto de calidad y oportunidad de entrega; comprometidos con el
           cumplimiento de la legislación peruana vigente relacionada al área
           laboral, de seguridad y salud ocupacional, medio ambiente y programa
-          de responsabilidad social.
+          de responsabilidad social. Fomentando la participación de nuestros
+          colaboradores y seguimos la política de la mejora continua.
         </p>
       </div>
 

@@ -57,7 +57,7 @@ const HeadeIso = () => {
             ESCRÍBANOS
           </Typography>
           <Typography variant="body1" color="#37474F">
-            ventas@mphuyuyuraq.com
+            minphuyuii@yahoo.es
           </Typography>
         </Box>
       </Box>

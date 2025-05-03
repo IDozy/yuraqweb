@@ -1,0 +1,31 @@
+.premiacion-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 40px auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .premiacion-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .premiacion-title {
+    padding: 20px;
+    text-align: center;
+    background-color: #fafafa;
+  }
+  
+  .premiacion-title h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+  }
+  

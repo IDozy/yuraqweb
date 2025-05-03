@@ -4,6 +4,13 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact  from "./pages/Contact";
 import Plants from "./pages/Plants";
+import DevHuman from "./pages/DevHuman";
+import RespSocial from "./pages/RespSocial";
+import SecurityOcu from "./pages/SecurityOcu";
+import CalAgricola from "./pages/CalAgricola";
+import CalGranulada from "./pages/CalGranulada";
+import CalHidratada from "./pages/CalHidratada";
+import CalMolida from "./pages/CalMolida";
 
 
 const MycalPage = () => {
@@ -14,6 +21,13 @@ const MycalPage = () => {
         <Route path="/nosotros" element={<About/>}/>
         <Route path="/contacto" element={<Contact/>}/>
         <Route path="/produccion" element={<Plants/>}/>
+        <Route path="/responsabilidad-social" element={<RespSocial/>} />
+        <Route path="/seguridad" element={<SecurityOcu/>} />
+        <Route path="/desarrollo-humano" element={<DevHuman/>}/>
+        <Route path="/cal-hidratada-agricola" element={<CalAgricola/>}   />
+        <Route path="/cal-viva-granulada" element={<CalGranulada/>} />
+        <Route path="/cal-hidratada-industrial" element={<CalHidratada/>} />
+        <Route path="/cal-viva-molida" element={<CalMolida/>} />
       </Routes>
     </BrowserRouter>
   );
