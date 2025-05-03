@@ -51,7 +51,7 @@ const NavBar = () => {
               <NavButton to="/produccion" label="CENTROS" />
 
               {/* Compromiso Menu */}
-              <Button sx={navButtonStyle("var(--color-primary)")} onClick={handleMenuOpen(setAnchorElCompromiso)}>
+              <Button sx={navButtonStyle("")} onClick={handleMenuOpen(setAnchorElCompromiso)}>
                 NUESTRO COMPROMISO
               </Button>
               <Menu anchorEl={anchorElCompromiso} open={openCompromiso} onClose={handleMenuClose(setAnchorElCompromiso)}>
