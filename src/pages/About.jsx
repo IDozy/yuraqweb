@@ -8,7 +8,7 @@ import ValoresCorporativos from "../components/About/ValoresCorporativos";
 import MisionAbout from '../components/About/MisionAbout';
 import VisionAbout from '../components/About/VisionAbout';
 import PremiacionSlide from '../components/About/PremiacionSlide';
-
+import Footer from '../components/Footer';
 
 const About = () => {
   return (
@@ -22,6 +22,7 @@ const About = () => {
       <MisionAbout/>
       <VisionAbout/>
       <PremiacionSlide/>
+      <Footer/>
     </>
   );
 };
