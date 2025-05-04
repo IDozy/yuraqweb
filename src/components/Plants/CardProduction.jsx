@@ -36,7 +36,7 @@ export default function ProductionPlants() {
   return (
     <div className="w-full py-16 bg-gray-50">
       <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-        Nuestras Plantas de Producción
+        Nuestros Centros de Producción
       </h2>
 
       <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-2 px-4">

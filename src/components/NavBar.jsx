@@ -48,7 +48,7 @@ const NavBar = () => {
                 ))}
               </Menu>
 
-              <NavButton to="/produccion" label="CENTROS" />
+              <NavButton to="/produccion" label="CENTROS DE PRODUCCION" />
 
               {/* Compromiso Menu */}
               <Button sx={navButtonStyle("")} onClick={handleMenuOpen(setAnchorElCompromiso)}>
