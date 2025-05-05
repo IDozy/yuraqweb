@@ -1,0 +1,41 @@
+.producto-item {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .producto-item.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .producto-img img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .producto-info {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .producto-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .producto-info h4 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .producto-info p {
+    line-height: 1.6;
+    color: #444;
+  }
+  
