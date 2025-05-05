@@ -1,0 +1,45 @@
+.huella-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+  }
+  
+  .huella-text {
+    flex: 1 1 45%;
+    min-width: 280px;
+  }
+  
+  .huella-title {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+  }
+  
+  .huella-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .huella-image {
+    flex: 1 1 45%;
+    min-width: 280px;
+  }
+  
+  .huella-card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    background: white;
+  }
+  
+  .huella-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  

@@ -12,7 +12,7 @@ import PlantsProductionHome from '../components/Home/PlantsProductionHome';
 import Whatsapp from "../components/whatsappbutton/Whatsapp.jsx";
 import ConfianHome from '../components/Home/ConfianHome.jsx';
 import Segmentos from '../components/Home/Segmentos.jsx';
-
+import HuellaCarbono from '../components/Home/HuellaCarbono.jsx';
 
 const Home = () => {
   return (
@@ -22,11 +22,11 @@ const Home = () => {
       <NavBar/>
       <SlideHome/>
       <ExpeInfo/>
-    
       <WhyHome/>
       <CardCompanyHome/>
       <CertifHome/>
       <PlantsProductionHome/>
+      <HuellaCarbono/>
       <Segmentos/>
       <ConfianHome/>
       <Footer/>
