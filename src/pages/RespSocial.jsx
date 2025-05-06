@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import SlideSocial from '../components/RespSocial/SlideSocial';
 import ResponCard from '../components/RespSocial/ResponCard';
 import SaludCard from '../components/RespSocial/SaludCard';
+import MantenimientoCard from '../components/RespSocial/MantCard';
 
 
 const RespSocial = () => {
@@ -17,6 +18,7 @@ const RespSocial = () => {
       <SlideSocial/>
       <ResponCard/>
       <SaludCard/>
+      <MantenimientoCard/>
       <Footer/>
     </>
   );
