@@ -1,7 +1,24 @@
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import "./ResponsabilidadCard.css";
 
+const images = [
+  "/Resp_Social7.JPG",
+  "/resp_social9.jpg"
+];
+
+const INTERVAL_TIME = 3000; // Puedes modificar aquí el tiempo (en milisegundos)
+
 const ResponsabilidadCard = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, INTERVAL_TIME);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <motion.div
       className="card-container"
@@ -11,7 +28,18 @@ const ResponsabilidadCard = () => {
       viewport={{ once: true }}
     >
       <div className="card-image">
-        <img src="/Resp_Social7.JPG" alt="Proyecto Educativo" />
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={images[index]}
+            src={images[index]}
+            alt={`Imagen ${index + 1}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+            className="card-img"
+          />
+        </AnimatePresence>
       </div>
       <div className="card-content">
         <h2>Construcción y Entrega de Módulos Educativos</h2>
