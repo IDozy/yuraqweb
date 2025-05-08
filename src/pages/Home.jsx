@@ -23,10 +23,10 @@ const Home = () => {
       <SlideHome/>
       <ExpeInfo/>
       <WhyHome/>
-      <CardCompanyHome/>
-      <CertifHome/>
-      <PlantsProductionHome/>
       <HuellaCarbono/>
+      <CertifHome/>
+      <CardCompanyHome/>
+      <PlantsProductionHome/>
       <Segmentos/>
       <ConfianHome/>
       <Footer/>
