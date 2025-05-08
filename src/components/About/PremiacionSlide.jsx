@@ -7,7 +7,7 @@ import premiacionImg from "/Premiacion1.jpg";
 const PremiacionSlide = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.2, // Se activa cuando el 20% del componente es visible
+    threshold: 0.2,
   });
 
   return (
@@ -22,7 +22,12 @@ const PremiacionSlide = () => {
         <img src={premiacionImg} alt="Premiación" />
       </div>
       <div className="premiacion-text">
-        <h3>Somos asociados de la cámara de comercio de Cajamarca</h3>
+        <h3>Somos asociados de la Cámara de Comercio de Cajamarca</h3>
+        <p>
+          Esta afiliación nos permite fortalecer lazos con el sector empresarial,
+          participando en iniciativas que promueven el desarrollo económico sostenible
+          en la región.
+        </p>
       </div>
     </motion.div>
   );
