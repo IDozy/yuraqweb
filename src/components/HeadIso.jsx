@@ -62,8 +62,8 @@ const HeadeIso = () => {
         </Box>
       </Box>
       <Box display="flex" alignItems="center" gap={2}>
-        <Box component="img" src="/Certificacion_ISO9001.png" alt="Certificado ISO" height={90} mx={2}/>
-        <Box component="img" src="/Certificacion_OHSAS.png" alt="Certificado ISO" height={80} />
+        <Box component="img" src="/iso9001.png" alt="Certificado ISO" height={90} mx={2}/>
+        <Box component="img" src="/iso14001.png" alt="Certificado ISO" height={80} />
         
       </Box>
     </Grid>

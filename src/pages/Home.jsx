@@ -6,7 +6,7 @@ import SlideHome from '../components/Home/SlideHome.jsx';
 import ExpeInfo from "../components/ExpeInfo";
 import Footer from "../components/Footer";
 import WhyHome from "../components/Home/WhyHome";
-import CertifHome from '../components/Home/CertifHome';
+import CertifiHome from '../components/Home/CertifiHome.jsx';
 import CardCompanyHome from '../components/Home/CardCompanyHome.jsx';
 import PlantsProductionHome from '../components/Home/PlantsProductionHome';
 import Whatsapp from "../components/whatsappbutton/Whatsapp.jsx";
@@ -24,7 +24,7 @@ const Home = () => {
       <ExpeInfo/>
       <WhyHome/>
       <HuellaCarbono/>
-      <CertifHome/>
+      <CertifiHome/>
       <CardCompanyHome/>
       <PlantsProductionHome/>
       <Segmentos/>
