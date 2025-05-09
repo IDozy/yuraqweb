@@ -24,6 +24,7 @@ const certifications = [
     title: "ISO 45001",
     description: "Gestión de seguridad y salud en el trabajo.",
   },
+  
  
 ];
 
