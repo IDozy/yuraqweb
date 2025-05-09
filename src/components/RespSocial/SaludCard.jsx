@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./SaludCard.css"; // Asegúrate de importar esta hoja CSS
 
 const images = [
-  "/Resp_Social5.png",
+  "/resp_social5.jpg",
   "/campañas_medicas.png", // Cambia esta ruta por tu segunda imagen real
 ];
 
