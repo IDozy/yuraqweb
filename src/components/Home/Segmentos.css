@@ -48,7 +48,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    color: white;
+    color: #ffc300;
     transition: opacity 0.3s ease;
   }
   
@@ -62,7 +62,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
-    color: white;
+    color: #ffc300;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: opacity 0.3s ease;

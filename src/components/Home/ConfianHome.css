@@ -1,57 +1,142 @@
-.confian-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-    flex-wrap: wrap;
+/* Variables de color */
+:root {
+  --yellow-primary: #ffc300;       /* Amarillo vibrante */
+  --yellow-dark: #e6b000;          /* Amarillo oscuro para bordes */
+  --black: #222222;                /* Negro para texto */
+  --white: #ffffff;                /* Blanco */
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estructura principal */
+.confian-section {
+  width: 100%;
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.confian-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Sección de título */
+.confian-title-container {
+  flex: 1;
+  min-width: 300px;
+  padding: 2rem;
+  background-color: var(--yellow-primary);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border: 3px solid var(--yellow-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confian-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.confian-title span {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.confian-title span:nth-child(2) {
+  color: var(--black);
+  margin: 0.5rem 0;
+}
+
+/* Sección de logo */
+.confian-logo-container {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.client-logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transition: all 0.5s ease;
+}
+
+.client-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--black);
+  text-align: center;
+  margin-top: 0.5rem;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Efectos hover */
+.confian-title-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .confian-content {
+    flex-direction: column;
+    gap: 3rem;
   }
   
-  .confian-left {
-    flex: 1;
-    min-width: 280px;
-    padding: 1rem;
+  .confian-title-container {
+    width: 100%;
+    padding: 1.5rem;
   }
   
-  .confian-left h2 {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1.2;
-    color: #222;
+  .client-logo {
+    max-height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .confian-section {
+    padding: 2rem 0.5rem;
   }
   
-  .confian-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 280px;
-    padding: 1rem;
+  .confian-title span {
+    font-size: 1.8rem;
   }
   
-  .confian-logo {
-    max-width: 300px;
-    max-height: 150px;
-    object-fit: contain;
-    transition: opacity 1s ease-in-out;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  .client-logo {
+    max-height: 100px;
   }
   
-  /* Responsivo */
-  @media (max-width: 768px) {
-    .confian-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .confian-left h2 {
-      font-size: 2rem;
-    }
-  
-    .confian-logo {
-      max-width: 200px;
-      max-height: 100px;
-    }
+  .client-name {
+    font-size: 1.2rem;
   }
-  
+}

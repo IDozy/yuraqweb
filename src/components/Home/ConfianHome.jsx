@@ -1,37 +1,59 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import camaraLogo from "/Clientes_CamaradeComercio.png";
 import newmontLogo from "/Clientes_Newmont.png";
 import shahuindoLogo from "/Clientes_Shahuindo.png";
-import '../Home/ConfianHome.css';
+import './ConfianHome.css';
 
 const ConfianHome = () => {
-  const logos = [camaraLogo, newmontLogo, shahuindoLogo];
+  const clients = [
+    { logo: camaraLogo, name: "Cámara de Comercio" },
+    { logo: newmontLogo, name: "Newmont" },
+    { logo: shahuindoLogo, name: "Shahuindo" }
+  ];
+  
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % logos.length);
-    }, 3000); // cambia cada 3 segundos
+      setCurrentIndex((prev) => (prev + 1) % clients.length);
+    }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [clients.length]);
 
   return (
-    <section className="confian-container">
-      <div className="confian-left text-center">
-        <h2>
-          CON LA<br />
-          CONFIANZA<br />
-          DE:
-        </h2>
-      </div>
+    <section className="confian-section">
+      <div className="confian-content">
+        <motion.div 
+          className="confian-title-container"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="confian-title">
+            <span>CON LA</span>
+            <span>CONFIANZA</span>
+            <span>DE:</span>
+          </h2>
+        </motion.div>
 
-      <div className="confian-right">
-        <img
-          src={logos[currentIndex]}
-          alt={`Logo ${currentIndex + 1}`}
-          className="confian-logo"
-        />
+        <motion.div 
+          className="confian-logo-container"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          key={currentIndex}
+        >
+          <div className="logo-wrapper">
+            <img
+              src={clients[currentIndex].logo}
+              alt={clients[currentIndex].name}
+              className="client-logo"
+            />
+            <p className="client-name">{clients[currentIndex].name}</p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
