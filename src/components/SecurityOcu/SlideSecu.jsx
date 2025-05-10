@@ -1,19 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import "./SlideSecu.css";
 
 const slides = [
   {
-    image: "/seguridad1.JPG",
-    title: "Comprometidos con la Seguridad Ocupacional",
-    description:
-      "Protegemos la vida de cada colaborador mediante protocolos rigurosos y capacitaciones continuas.",
+    title: "Comprometidos con la Seguridad",
+    description: "Promovemos prácticas de seguridad continuas para proteger la salud de todos los que trabajan en nuestro entorno local.",
+    image: "/seguridad1.JPG", 
   },
   {
-    image: "/seguridad2.JPG",
-    title: "Prevención y Cultura de Seguridad",
-    description:
-      "Fomentamos una cultura preventiva con enfoque en riesgos laborales en toda la operación minera.",
+    title: "Responsabilidad en Acción",
+    description: "Realizamos charlas de seguridad para todos los trabajadores siempre antes de iniciar nuestras operaciones. ",
+    image: "/seguridad2.JPG", 
   },
 ];
 
@@ -22,33 +19,28 @@ const SlideSecu = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % slides.length);
-    }, 7000);
+      setIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 5000); // cambia cada 5 segundos
+
     return () => clearInterval(timer);
   }, []);
 
+  const nextSlide = () => setIndex((index + 1) % slides.length);
+  const prevSlide = () => setIndex((index - 1 + slides.length) % slides.length);
+
   return (
-    <div className="slide-secu-container">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={slides[index].image}
-          className="slide-secu"
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 30 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
-        >
-          <img
-            src={slides[index].image}
-            alt={slides[index].title}
-            className="slide-secu-img"
-          />
-          <div className="slide-secu-overlay">
-            <h2>{slides[index].title}</h2>
-            <p>{slides[index].description}</p>
+    <div className="slider-container">
+      {slides.map((slide, i) => (
+        <div key={i} className={`slide ${i === index ? "active" : ""}`}>
+          <img src={slide.image} alt={slide.title} className="slide-image" />
+          <div className="slide-text">
+            <h2>{slide.title}</h2>
+            <p>{slide.description}</p>
           </div>
-        </motion.div>
-      </AnimatePresence>
+        </div>
+      ))}
+      <button className="arrow left" onClick={prevSlide}>‹</button>
+      <button className="arrow right" onClick={nextSlide}>›</button>
     </div>
   );
 };
