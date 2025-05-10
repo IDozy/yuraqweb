@@ -1,106 +1,68 @@
 import React from "react";
-import { Box, Typography, Grid, TextField, Button } from "@mui/material";
-import { Room, Phone, Email } from "@mui/icons-material";
+import "./Contacto.css";
 
 export default function Contacto() {
   return (
-    <Box
-      component="main"
-      sx={{
-        py: 5,
-        px: 2,
-        maxWidth: "1400px",
-        mx: "auto",
-        display: "flex",          // <- esto hace que estén al costado
-        flexWrap: "wrap",          // <- que en celular baje
-        gap: 4,                    // <- espacio entre columnas
-      }}
-    >
-      {/* Sección de Información */}
-      <Box
-        component="section"
-        sx={{
-          flex: "1 1 500px",      // <- ocupa la mitad más o menos
-          minWidth: "300px", 
-        }}
-      >
-        <Typography variant="h4" fontWeight="bold" gutterBottom>
-          ¡Contáctanos!
-        </Typography>
+    <main className="contacto-contenedor">
+      {/* Información */}
+      <section className="contacto-info">
+        <h2>¡Contáctanos!</h2>
 
-        <Box display="flex" alignItems="center" mb={2}>
-          <Room color="error" sx={{ mr: 2 }} />
-          <Box>
-            <Typography fontWeight="bold">Oficina</Typography>
-            <Typography>Jr. Sor Manuela Gil 322, Cajamarca, Perú</Typography>
-          </Box>
-        </Box>
+        <div className="info-item">
+          <span className="icono amarillo">📍</span>
+          <div>
+            <strong>Oficina</strong>
+            <p>Jr. Sor Manuela Gil 322, Cajamarca, Perú</p>
+          </div>
+        </div>
 
-        <Box display="flex" alignItems="center" mb={2}>
-          <Room color="error" sx={{ mr: 2 }} />
-          <Box>
-            <Typography fontWeight="bold">Planta</Typography>
-            <Typography>Carretera a Cumbemayo</Typography>
-          </Box>
-        </Box>
+        <div className="info-item">
+          <span className="icono amarillo">🏭</span>
+          <div>
+            <strong>Centro de producción Cumbemayo</strong>
+            <p>Carretera a Cumbemayo</p>
+          </div>
+        </div>
 
-        <Box display="flex" alignItems="center" mb={2}>
-          <Phone color="error" sx={{ mr: 2 }} />
-          <Box>
-            <Typography fontWeight="bold">Teléfonos:</Typography>
-            <Typography>976865540 // 978199469</Typography>
-          </Box>
-        </Box>
+         <div className="info-item">
+          <span className="icono amarillo">🏭</span>
+          <div>
+            <strong>Centro de producción Puyllucana</strong>
+            <p>Carretera a Celendín</p>
+          </div>
+        </div>
 
-        <Box display="flex" alignItems="center">
-          <Email color="error" sx={{ mr: 2 }} />
-          <Box>
-            <Typography fontWeight="bold">Correo:</Typography>
-            <Typography>ventascali@mphuyuyuraq.com</Typography>
-          </Box>
-        </Box>
-      </Box>
+        <div className="info-item">
+          <span className="icono amarillo">📞</span>
+          <div>
+            <strong>Teléfonos:</strong>
+            <p>976865540 // 978199469</p>
+          </div>
+        </div>
 
-      {/* Sección de Formulario */}
-      <Box
-        component="section"
-        sx={{
-          flex: "1 1 500px",      // <- ocupa la mitad más o menos
-          minWidth: "300px",
-          backgroundColor: "#f0f4f8",
-          p: 4,
-          borderRadius: 2,
-        }}
-      >
-        <Typography variant="h6" fontWeight="medium" mb={3}>
-          Completa el siguiente formulario y uno de nuestros asesores se comunicará contigo.
-        </Typography>
+        <div className="info-item">
+          <span className="icono amarillo">✉️</span>
+          <div>
+            <strong>Correo:</strong>
+            <p>minphuyuii@yahoo.es</p>
+          </div>
+        </div>
+      </section>
 
-        <form noValidate autoComplete="off">
-          <Grid container spacing={2}>
-            <Grid item xs={12} sm={6}>
-              <TextField label="Nombre y Apellido*" fullWidth variant="outlined" />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField label="Dirección*" fullWidth variant="outlined" />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField label="Correo*" fullWidth variant="outlined" />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField label="Teléfono*" fullWidth variant="outlined" />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField label="Mensaje" fullWidth variant="outlined" multiline rows={4} />
-            </Grid>
-            <Grid item xs={12}>
-              <Button type="submit" variant="contained" size="large" fullWidth>
-                ENVIAR
-              </Button>
-            </Grid>
-          </Grid>
+      {/* Formulario */}
+      <section className="contacto-formulario">
+        <h3>Completa el siguiente formulario y uno de nuestros asesores se comunicará contigo.</h3>
+        <form>
+          <div className="form-grid">
+            <input type="text" placeholder="Nombre y Apellido*" required />
+            <input type="text" placeholder="Dirección*" required />
+            <input type="email" placeholder="Correo*" required />
+            <input type="tel" placeholder="Teléfono*" required />
+            <textarea rows="4" placeholder="Mensaje"></textarea>
+            <button type="submit">ENVIAR</button>
+          </div>
         </form>
-      </Box>
-    </Box>
+      </section>
+    </main>
   );
 }
