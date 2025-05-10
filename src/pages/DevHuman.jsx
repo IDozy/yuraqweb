@@ -3,7 +3,8 @@ import HeadInfo from "../components/HeadInfo";
 import HeadeIso from "../components/HeadIso";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import CardProduction from "../components/Plants/CardProduction";
+import SlideHuman from '../components/DevHuman/SlideHuman';
+
 
 const DevHuman = () => {
   return (
@@ -11,7 +12,7 @@ const DevHuman = () => {
       <HeadInfo />
       <HeadeIso />
       <NavBar/>
-      <CardProduction/>
+      <SlideHuman/>
       <Footer/>
     </>
   );
