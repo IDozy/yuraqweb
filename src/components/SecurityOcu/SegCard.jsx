@@ -1,46 +1,52 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./SegCard.css";
 
-const images = [
-  "/segcard1.JPG",
-  "/segcard2.JPG",
- 
-];
+const images = ["/segcard1.JPG", "/segcard2.JPG"];
+
+const INTERVAL_TIME = 3000; // Puedes modificar aquí el tiempo (en milisegundos)
 
 const SegCard = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, INTERVAL_TIME);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="segcard-container">
-      <div className="segcard-image">
+    <motion.div
+      className="card-container"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
+      <div className="card-image">
         <AnimatePresence mode="wait">
           <motion.img
             key={images[index]}
             src={images[index]}
-            alt="Imagen de seguridad"
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 30 }}
-            transition={{ duration: 0.8 }}
+            alt={`Imagen ${index + 1}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+            className="card-img"
           />
         </AnimatePresence>
       </div>
-      <div className="segcard-text">
+      <div className="card-content">
         <h2>Compromiso con la Seguridad</h2>
         <p>
-          Nuestra empresa prioriza la seguridad de todos los colaboradores y contratistas.
-          Implementamos rigurosos protocolos de prevención y capacitaciones constantes para mantener un entorno laboral seguro.
+          Nuestra empresa prioriza la seguridad de todos los colaboradores y
+          contratistas. Implementamos rigurosos protocolos de prevención y
+          capacitaciones constantes para mantener un entorno laboral seguro.
         </p>
       </div>
-    </section>
+    </motion.div>
   );
 };
 
