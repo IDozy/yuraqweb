@@ -59,8 +59,8 @@
   }
   
   .hero-empresa-button {
-    background-color: rgba(255, 230, 0, 0.7);
-    color: white;
+    background-color: #ffc300;
+    color: black;
     font-weight: 600;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
