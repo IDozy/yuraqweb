@@ -1,0 +1,171 @@
+/* Paleta de colores */
+:root {
+  --yellow-primary: #FFD700;       /* Amarillo dorado */
+  --yellow-secondary: #FFECB3;     /* Amarillo claro */
+  --yellow-dark: #FFC107;          /* Amarillo oscuro */
+  --yellow-light: #FFF9C4;         /* Amarillo muy claro */
+  --black: #212121;                /* Negro para texto */
+  --gray: #424242;                 /* Gris para texto secundario */
+  --white: #FFFFFF;                /* Blanco */
+  --light-bg: #ffffff;             /* Fondo claro */
+}
+
+/* Estilos generales */
+.production-plants-section {
+  width: 100%;
+  padding: 4rem 1rem;
+  background-color: var(--light-bg);  /* Fondo claro en lugar de amarillo */
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: var(--yellow-dark);
+}
+
+/* Contenedor de plantas */
+.plants-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Tarjeta de planta - Ahora con fondo amarillo */
+.plant-card {
+  background-color: var(--yellow-secondary);  /* Fondo amarillo */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--yellow-dark);      /* Borde amarillo oscuro */
+}
+
+.plant-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.plant-image-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-bottom: 3px solid var(--yellow-dark);
+}
+
+.plant-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.plant-card:hover .plant-image {
+  transform: scale(1.05);
+}
+
+.plant-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.plant-title {
+  font-size: 1.5rem;
+  font-weight: 700;                     /* Más grueso para mejor contraste */
+  color: var(--black);
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.plant-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--black);       /* Línea negra para contraste */
+}
+
+.plant-description {
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.plant-description strong {
+  color: var(--black);
+  font-weight: 700;                     /* Texto en negrita más visible */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .plants-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .plant-image-container {
+    height: 200px;
+  }
+  
+  .plant-card {
+    border-width: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .production-plants-section {
+    padding: 3rem 0.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    padding-bottom: 0.8rem;
+  }
+  
+  .section-title::after {
+    width: 80px;
+    height: 3px;
+  }
+  
+  .plant-content {
+    padding: 1.2rem;
+  }
+  
+  .plant-title {
+    font-size: 1.3rem;
+  }
+  
+  .plant-description {
+    font-size: 0.95rem;
+  }
+}
