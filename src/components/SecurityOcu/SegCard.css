@@ -1,0 +1,64 @@
+.segcard-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.segcard-image {
+  flex: 1;
+  max-width: 400px;
+  min-height: 300px; /* Asegura altura consistente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.segcard-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene proporciones, recorta si es necesario */
+}
+
+.segcard-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.segcard-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+.segcard-text p {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .segcard-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .segcard-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .segcard-text p {
+    font-size: 0.95rem;
+  }
+
+  .segcard-image {
+    max-width: 100%;
+    min-height: 250px;
+  }
+}
