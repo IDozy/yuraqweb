@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "./CanastasCard.css";
+import "./HappyB.css"; // Asegúrate de crear este archivo o reutilizar uno
 
 const images = [
-  "/canastas1.JPG",
-  "/resp_social3.png"
+  "/cumple1.JPG",  // Reemplaza con tus rutas reales
+  "/cumple2.JPG",
+  "/cumple3.JPG"
 ];
 
-const INTERVAL_TIME = 3000; // Puedes modificar aquí el tiempo (en milisegundos)
+const INTERVAL_TIME = 3000;
 
-const CanastasCard = () => {
+const HappyB = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -32,7 +33,7 @@ const CanastasCard = () => {
           <motion.img
             key={images[index]}
             src={images[index]}
-            alt={`Imagen ${index + 1}`}
+            alt={`Cumpleaños ${index + 1}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -42,15 +43,14 @@ const CanastasCard = () => {
         </AnimatePresence>
       </div>
       <div className="card-content">
-        <h2>Entrega de canastas y víveres a familias </h2>
+        <h2>Celebración de Cumpleaños</h2>
         <p>
-          Se hizo entrega de víveres no perecibles para las familias que viven cerca a dónde desarrollamos nuestras operaciones con el fin de 
-          compartir un granito de arena, buscamos brindar apoyo local.  
-        
+          Reconocemos y celebramos a nuestros colaboradores en su día especial, promoviendo un ambiente de trabajo 
+          saludable y fortaleciendo el espíritu de equipo dentro de la organización.
         </p>
       </div>
     </motion.div>
   );
 };
 
-export default CanastasCard;
+export default HappyB;

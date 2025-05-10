@@ -3,14 +3,14 @@ import "./SlideHuman.css";
 
 const slides = [
   {
-    title: "Comprometidos con la Comunidad",
-    description: "Realizamos programas sociales que benefician a las zonas aledañas a nuestras operaciones.",
+    title: "Comprometidos con la Salud y el Deporte",
+    description: "Realizamos programas deportivos de integración entre toda la familia Phuyuyuraq.",
     image: "/desarrollo1.JPG", // Cambia por la ruta  imagen
   },
   {
-    title: "Sostenibilidad en Acción",
-    description: "Promovemos prácticas responsables para proteger el medio ambiente y el desarrollo local.",
-    image: "/desarrollo2.JPG", // Cambia por la ruta imagen
+    title: "Compartiendo con nuestros trabajadores",
+    description: "Promovemos un ambiente laboral acogedor por ello buscamos celebrar todo tipo de logro entre nuestros miembros.",
+    image: "/resp_social1.JPG", // Cambia por la ruta imagen
   },
 ];
 
