@@ -6,20 +6,20 @@ const carouselItems = [
   {
     src: '/Slide1.JPG',
     alt: 'Primera imagen',
-    title: 'Primera imagen',
-    description: 'Descripción breve de la primera imagen.',
+    title: 'Un Nuevo Rostro',
+    description: 'Somos conocidos por años y cada vez más queridos.',
   },
   {
     src: '/Slide2.JPG',
     alt: 'Segunda imagen',
-    title: 'Segunda imagen',
-    description: 'Texto de ejemplo para la segunda imagen.',
+    title: 'Operativilidad Continua',
+    description: 'El largo camino en nuestro trabajo es reflejado en la confianza generada.',
   },
   {
     src: '/Home6.JPG',
     alt: 'Tercera imagen',
-    title: 'Tercera imagen',
-    description: 'Algo más aquí para la tercera imagen.',
+    title: 'Supervición Rigurosa',
+    description: 'Cuidamos de nuestro trabajo como de nuestros operadores.',
   },
 ];
 
