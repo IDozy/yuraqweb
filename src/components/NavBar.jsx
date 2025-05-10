@@ -36,9 +36,8 @@ const NavBar = () => {
               </Button>
               <Menu anchorEl={anchorElProducts} open={openProducts} onClose={handleMenuClose(setAnchorElProducts)}>
                 {[
-                  ["Cal Viva Molida", "cal-viva-molida"],
-                  ["Cal Viva Granulada", "cal-viva-granulada"],
-                  ["Cal Hidratada Industrial", "cal-hidratada-industrial"],
+                
+                  ["Cal Viva Granulada", "cal-viva-granulada"],       
                   ["Cal Hidratada Agrícola", "cal-hidratada-agricola"],
                   
                 ].map(([name, slug]) => (

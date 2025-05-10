@@ -9,8 +9,7 @@ import RespSocial from "./pages/RespSocial";
 import SecurityOcu from "./pages/SecurityOcu";
 import CalAgricola from "./pages/CalAgricola";
 import CalGranulada from "./pages/CalGranulada";
-import CalHidratada from "./pages/CalHidratada";
-import CalMolida from "./pages/CalMolida";
+
 
 
 const MycalPage = () => {
@@ -26,8 +25,7 @@ const MycalPage = () => {
         <Route path="/desarrollo-humano" element={<DevHuman/>}/>
         <Route path="/cal-hidratada-agricola" element={<CalAgricola/>}   />
         <Route path="/cal-viva-granulada" element={<CalGranulada/>} />
-        <Route path="/cal-hidratada-industrial" element={<CalHidratada/>} />
-        <Route path="/cal-viva-molida" element={<CalMolida/>} />
+        
       </Routes>
     </BrowserRouter>
   );
