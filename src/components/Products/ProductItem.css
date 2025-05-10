@@ -1,41 +1,123 @@
-.producto-item {
-    display: flex;
-    align-items: center;
-    margin: 2rem 0;
-    gap: 2rem;
+/* Contenedor principal */
+.product-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  background-color: #FFF8E1; /* Amarillo claro de fondo */
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 1200px;
+}
+
+/* Sección de imagen */
+.product-image-container {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #FFD600; /* Borde amarillo */
+}
+
+/* Sección de información */
+.product-info-container {
+  flex: 1;
+  min-width: 280px;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212121; /* Negro */
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #FFD600; /* Línea amarilla decorativa */
+}
+
+/* Estilos personalizados para los acordeones */
+.custom-accordion {
+  background-color: #FFECB3 !important; /* Amarillo medio */
+  border-radius: 0.5rem !important;
+  margin-bottom: 1rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #FFD600 !important;
+  overflow: hidden;
+}
+
+.accordion-summary {
+  background-color: #FFD600 !important; /* Amarillo más intenso */
+  transition: all 0.3s ease !important;
+}
+
+.accordion-summary:hover {
+  background-color: #FFC107 !important; /* Amarillo hover */
+}
+
+.accordion-title {
+  font-weight: 600 !important;
+  color: #212121 !important; /* Texto negro */
+  font-size: 1.1rem !important;
+}
+
+.accordion-icon {
+  color: #212121 !important; /* Icono negro */
+}
+
+.accordion-details {
+  background-color: #FFFDE7 !important; /* Amarillo muy claro */
+  padding: 1.5rem !important;
+}
+
+.accordion-content {
+  color: #424242 !important; /* Texto gris oscuro */
+  line-height: 1.6 !important;
+}
+
+/* Efectos de transición para el acordeón */
+.MuiCollapse-entered {
+  transition: all 0.3s ease-out !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-item-container {
+    flex-direction: column;
     padding: 1rem;
-    flex-wrap: wrap;
+    margin: 1rem;
   }
   
-  .producto-item.reverse {
-    flex-direction: row-reverse;
+  .product-title {
+    font-size: 1.6rem;
   }
   
-  .producto-img img {
-    max-width: 400px;
-    width: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  .custom-accordion {
+    margin-bottom: 0.8rem !important;
   }
   
-  .producto-info {
-    flex: 1;
-    min-width: 280px;
+  .accordion-title {
+    font-size: 1rem !important;
   }
   
-  .producto-info h2 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+  .accordion-details {
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-title {
+    font-size: 1.4rem;
   }
   
-  .producto-info h4 {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 1rem;
+  .accordion-summary {
+    padding: 0.8rem !important;
   }
-  
-  .producto-info p {
-    line-height: 1.6;
-    color: #444;
-  }
-  
+}

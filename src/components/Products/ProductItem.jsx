@@ -7,55 +7,68 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import "./ProductItem.css"; // para los estilos
+import "./ProductItem.css";
 
 export default function ProductItem({ image, title, description, chemistry, identification, usage }) {
   return (
     <motion.div
-      className="flex flex-col md:flex-row items-center gap-8 p-6 bg-white rounded-2xl shadow-lg"
+      className="product-item-container"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="w-full md:w-1/2">
-        <img src={image} alt={title} className="rounded-xl w-full" />
+      <div className="product-image-container">
+        <img src={image} alt={title} className="product-image" />
       </div>
-      <section className="w-full md:w-1/2 space-y-4">
-        <h2 className="text-3xl font-semibold">{title}</h2>
+      
+      <section className="product-info-container">
+        <h2 className="product-title">{title}</h2>
 
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className="font-medium">Descripción</Typography>
+        <Accordion className="custom-accordion">
+          <AccordionSummary 
+            expandIcon={<ExpandMoreIcon className="accordion-icon" />}
+            className="accordion-summary"
+          >
+            <Typography className="accordion-title">Descripción</Typography>
           </AccordionSummary>
-          <AccordionDetails>
-            <Typography>{description}</Typography>
+          <AccordionDetails className="accordion-details">
+            <Typography className="accordion-content">{description}</Typography>
           </AccordionDetails>
         </Accordion>
 
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className="font-medium">Información Química</Typography>
+        <Accordion className="custom-accordion">
+          <AccordionSummary 
+            expandIcon={<ExpandMoreIcon className="accordion-icon" />}
+            className="accordion-summary"
+          >
+            <Typography className="accordion-title">Información Química</Typography>
           </AccordionSummary>
-          <AccordionDetails>
-            <Typography>{chemistry}</Typography>
+          <AccordionDetails className="accordion-details">
+            <Typography className="accordion-content">{chemistry}</Typography>
           </AccordionDetails>
         </Accordion>
 
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className="font-medium">Identificación del Producto</Typography>
+        <Accordion className="custom-accordion">
+          <AccordionSummary 
+            expandIcon={<ExpandMoreIcon className="accordion-icon" />}
+            className="accordion-summary"
+          >
+            <Typography className="accordion-title">Identificación del Producto</Typography>
           </AccordionSummary>
-          <AccordionDetails>
-            <Typography>{identification}</Typography>
+          <AccordionDetails className="accordion-details">
+            <Typography className="accordion-content">{identification}</Typography>
           </AccordionDetails>
         </Accordion>
 
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className="font-medium">Ejemplos de Uso</Typography>
+        <Accordion className="custom-accordion">
+          <AccordionSummary 
+            expandIcon={<ExpandMoreIcon className="accordion-icon" />}
+            className="accordion-summary"
+          >
+            <Typography className="accordion-title">Ejemplos de Uso</Typography>
           </AccordionSummary>
-          <AccordionDetails>
-            <Typography>{usage}</Typography>
+          <AccordionDetails className="accordion-details">
+            <Typography className="accordion-content">{usage}</Typography>
           </AccordionDetails>
         </Accordion>
       </section>
