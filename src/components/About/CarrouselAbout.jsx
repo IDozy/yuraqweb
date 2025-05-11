@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
+import "./CarrouselAbout.css";
 
 const slides = [
   {
     image: "/About_Empresa.JPG",
-    title: "Quiénes Somos",
-    description: "Somos una empresa dedicada a brindar soluciones de calidad."
+    title: "¿Quiénes Somos?",
+    description: "Somos una empresa minera dedicada a brindar soluciones en producción de CAL de calidad.",
   },
   {
     image: "/About_Empresa1.JPG",
-    title: "Nuestra Misión",
-    description: "Ofrecer el mejor servicio, adaptándonos a las necesidades de nuestros clientes."
+    title: "Nuestro Valor",
+    description: "Es ofrecer el mejor servicio en abastecimiento, adaptándonos a las necesidades de nuestros clientes.",
   },
-  
 ];
 
 const AboutCarousel = () => {
@@ -25,23 +25,18 @@ const AboutCarousel = () => {
   }, []);
 
   return (
-    <div style={styles.carousel}>
+    <div className="carousel-container">
       {slides.map((slide, index) => (
         <div
           key={index}
-          style={{
-            ...styles.slide,
-            opacity: index === current ? 1 : 0,
-            transition: "opacity 1s ease-in-out",
-            zIndex: index === current ? 2 : 1
-          }}
+          className={`carousel-slide ${index === current ? "active" : ""}`}
         >
-          <img 
-            src={slide.image} 
-            alt={slide.title} 
-            style={styles.image} 
+          <img
+            src={slide.image}
+            alt={slide.title}
+            className="carousel-image"
           />
-          <div style={styles.textContainer}>
+          <div className="carousel-text">
             <h2>{slide.title}</h2>
             <p>{slide.description}</p>
           </div>
@@ -49,44 +44,6 @@ const AboutCarousel = () => {
       ))}
     </div>
   );
-};
-
-const styles = {
-  carousel: {
-    position: "relative",
-    width: "100%",
-    height: "600px",
-    overflow: "hidden",
-    backgroundColor: "#000",
-  },
-  slide: {
-    width: "100%",
-    height: "100%",
-    position: "absolute",
-    top: 0,
-    left: 0,
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  image: {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover", // ⭐ muestra la imagen completa
-  },
-  textContainer: {
-    position: "absolute",
-    bottom: "10%",
-    left: "50%",
-    transform: "translateX(-50%)",
-    background: "rgba(0, 0, 0, 0.5)",
-    color: "#fff",
-    padding: "20px",
-    borderRadius: "10px",
-    textAlign: "center",
-    maxWidth: "80%",
-  }
 };
 
 export default AboutCarousel;

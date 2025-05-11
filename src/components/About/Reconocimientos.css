@@ -6,10 +6,15 @@
 }
 
 .reconocimientos-title {
-  font-size: 2.4rem;
-  margin-bottom: 40px;
-  color: #222;
-  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  color: #333;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #FFC300;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 .reconocimientos-grid {
@@ -23,10 +28,17 @@
   border-radius: 20px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
+  border: 2px solid transparent;
+}
+
+.reconocimiento-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+  border-color: #FFC300;
 }
 
 .reconocimiento-card img {
@@ -34,39 +46,56 @@
   height: auto;
   object-fit: contain;
   display: block;
+  border-bottom: 3px solid #FFC300;
 }
 
 .reconocimiento-info {
   padding: 25px;
+  background: #fff;
 }
 
 .reconocimiento-info h3 {
-  font-size: 1.6rem;
-  color: #333;
-  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 12px;
+  font-weight: 700;
+  border-left: 4px solid #FFC300;
+  padding-left: 12px;
+  text-align: left;
 }
 
 .reconocimiento-info p {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1.05rem;
+  color: #444;
   line-height: 1.6;
+  text-align: left;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
   .reconocimiento-info h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .reconocimiento-info p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .reconocimientos-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reconocimiento-info {
+    padding: 20px 15px;
   }
 
-  .reconocimiento-card {
-    max-width: 100%;
+  .reconocimiento-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .reconocimiento-info p {
+    font-size: 0.9rem;
   }
 }
