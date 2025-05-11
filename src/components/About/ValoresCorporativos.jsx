@@ -5,11 +5,11 @@ import { Security, Favorite, VerifiedUser, Lightbulb, AssignmentTurnedIn } from 
 import { motion } from "framer-motion";
 
 const valores = [
-  { nombre: "Seguridad",descripcion:"Comprometidos con la seguridad.", icono: Security, color: "primary" },
+  { nombre: "Seguridad",descripcion:"En todas las operaciones.", icono: Security, color: "primary" },
   { nombre: "Compromiso",descripcion:"Con la sociedad.", icono: Favorite, color: "error" },
-  { nombre: "Integridad",descripcion:"asegurada.", icono: VerifiedUser, color: "success" },
+  { nombre: "Integridad",descripcion:"Para los nuestros.", icono: VerifiedUser, color: "success" },
   { nombre: "Lealtad",descripcion:"Con nuestros clientes", icono: Lightbulb, color: "warning" },
-  { nombre: "Responsabilidad",descripcion:"Con la sociedad.", icono: AssignmentTurnedIn, color: "secondary" },
+  { nombre: "Responsabilidad",descripcion:"Con nuestro trabajo.", icono: AssignmentTurnedIn, color: "secondary" },
 ];
 
 // animación de bounce para el hover

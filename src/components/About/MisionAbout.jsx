@@ -1,13 +1,47 @@
-// src/components/MissionCard.jsx
 import React from "react";
 import { motion } from "framer-motion";
 
 export default function MissionCard() {
+  const cardVariants = {
+    offscreen: {
+      opacity: 0,
+      y: 50
+    },
+    onscreen: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8
+      }
+    }
+  };
+
+  const imageVariants = {
+    offscreen: {
+      opacity: 0,
+      x: 50
+    },
+    onscreen: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: 0.2,
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
-    <div
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, margin: "-100px" }}
       style={{
         display: "flex",
-        flexDirection: "row", // Esto asegura que el texto vaya primero (izquierda)
+        flexDirection: "column",
         alignItems: "center",
         backgroundColor: "#f9f9f9",
         borderRadius: "16px",
@@ -16,41 +50,62 @@ export default function MissionCard() {
         padding: "2rem",
         gap: "2rem",
         maxWidth: "1200px",
-        margin: "0 auto",
+        margin: "2rem auto",
+        textAlign: "center",
       }}
+      variants={cardVariants}
     >
-      {/* Texto de la Misión */}
-      <div style={{ flex: 1 }}>
+      {/* Título y texto */}
+      <motion.div
+        style={{
+          flex: 1,
+          minWidth: "300px",
+          maxWidth: "800px",
+        }}
+      >
         <h2
           style={{
-            color: "#E91E63",
-            fontSize: "2rem",
+            color: "#ffc300",
+            fontSize: "2.2rem",
             marginBottom: "1rem",
+            fontWeight: "700",
             textAlign: "center",
           }}
         >
           MISIÓN
         </h2>
-        <p style={{ fontSize: "1.2rem", color: "#555", lineHeight: 1.6 }}>
+        <p
+          style={{
+            fontSize: "clamp(1rem, 1.5vw, 1.2rem)",
+            color: "#444",
+            lineHeight: 1.8,
+            textAlign: "justify",
+            margin: "0 auto"
+          }}
+        >
           Producir, comercializar y transportar Óxido de calcio (Cal viva) e
           Hidróxido de calcio (Cal hidratada), brindando a nuestros clientes un
           producto de calidad y oportunidad de entrega; comprometidos con el
           cumplimiento de la legislación peruana vigente relacionada al área
           laboral, de seguridad y salud ocupacional, medio ambiente y programa
-          de responsabilidad social. Fomentando la participación de nuestros
+          de responsabilidad social. Fomentamos la participación de nuestros
           colaboradores y seguimos la política de la mejora continua.
         </p>
-      </div>
+      </motion.div>
 
-      {/* Imagen Animada */}
+      {/* Imagen animada */}
       <motion.img
-        src="/Mision.JPG" // Reemplaza esto con la ruta correcta de tu imagen
+        src="/Mision.JPG"
         alt="Misión"
-        style={{ width: "600px", height: "auto", borderRadius: "12px" }}
-        initial={{ rotate: -5, scale: 0.9 }}
-        animate={{ rotate: [-5, 5, -5], scale: [0.9, 1, 0.9] }}
-        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+        style={{
+          width: "100%",
+          maxWidth: "600px",
+          height: "auto",
+          borderRadius: "12px",
+          flex: 1,
+        }}
+        variants={imageVariants}
       />
-    </div>
+    </motion.div>
   );
 }
