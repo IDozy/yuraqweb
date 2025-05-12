@@ -15,9 +15,9 @@ const CalAgricola = () => {
         <ProductItem
           image="../../cal-hidratada.png"
           title="Hidróxido de Calcio - Cal Hidratada ( agricola) "
-          description="El hidróxido de calcio, también conocido como cal hidratada o cal agrícola, es un compuesto blanco y fino obtenido al agregar agua al óxido de calcio. Se utiliza ampliamente en la agricultura para corregir la acidez del suelo, mejorar la absorción de nutrientes y optimizar el rendimiento de los cultivos. Su aplicación ayuda a regular el pH, controlar plagas del suelo y favorecer un ambiente microbiológico saludable. Es una opción ecológica y efectiva para el manejo sostenible del terreno agrícola."
-          chemistry="CaO: 90% - MgO: 5% - Insolubles: <2%"
-          identification="Polvo blanco fino, ligeramente higroscópico."
+          description="Caliza calcinada mas agua. El hidróxido de calcio, también conocido como cal hidratada o cal agrícola, es un compuesto blanco y fino obtenido al agregar agua al óxido de calcio. Se utiliza ampliamente en la agricultura para corregir la acidez del suelo, mejorar la absorción de nutrientes y optimizar el rendimiento de los cultivos. Su aplicación ayuda a regular el pH, controlar plagas del suelo y favorecer un ambiente microbiológico saludable. Es una opción ecológica y efectiva para el manejo sostenible del terreno agrícola."
+          chemistry="CaO: 64% - Ca(OH)2: 84% - MgO: 0.5% - insoluble + SiO2: 0.9% "
+          identification="Cal hidradata para uso industrial, polvo blanco fino, ligeramente higroscópico - Mantener en un envase firmemente cerrado. Proteger contra daños físicos. Almacenar en un área lejos de fuentes de calor, humedad."
           usage="• Neutralización de suelos ácidos (corrección de pH).
          • Mejora de la absorción de nutrientes por las raíces.
          • Incremento de la actividad microbiana beneficiosa en el suelo.

@@ -1,9 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
-import './CardCompanyHome.css'
-
+import { useNavigate } from "react-router-dom";
+import './CardCompanyHome.css';
 
 export default function CardCompanyHome() {
+  const navigate = useNavigate();
+
+  const handleNosotrosClick = () => {
+    navigate("/nosotros");
+    // Scroll al inicio de la página
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <div className="hero-empresa-container">
       <img
@@ -30,6 +41,7 @@ export default function CardCompanyHome() {
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
           className="hero-empresa-button"
+          onClick={handleNosotrosClick}
         >
           NOSOTROS
         </motion.button>

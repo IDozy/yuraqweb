@@ -1,11 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import './PlantsProduction.css';
 
 const ProductionPlantsCard = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (isInView) {
@@ -14,12 +16,8 @@ const ProductionPlantsCard = () => {
   }, [isInView, mainControls]);
 
   const handleButtonClick = () => {
-    // Aquí puedes implementar la navegación a la sección de plantas
-    // Por ejemplo usando react-router o scroll a una sección con id
-    const plantsSection = document.getElementById('plantas-produccion');
-    if (plantsSection) {
-      plantsSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    navigate("/produccion");
+    window.scrollTo(0, 0); // 🔝 Scroll manual al tope de la nueva página
   };
 
   return (
@@ -42,18 +40,18 @@ const ProductionPlantsCard = () => {
               la más alta calidad en todos nuestros productos. Nuestras centros de producción están 
               diseñados para maximizar la eficiencia y minimizar el impacto ambiental.
             </p>
-            <button 
+            <motion.button 
               onClick={handleButtonClick}
               className="plants-button" 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Ver Ubicación
-            </button>
+            </motion.button>
           </div>
           <div className="plants-image-container">
             <motion.img
-              src="/Card1.JPG" // Reemplaza con tu imagen
+              src="/Card1.JPG"
               alt="Planta de producción"
               className="plants-image"
               initial={{ opacity: 0, x: 50 }}
