@@ -198,7 +198,7 @@ const NavBar = () => {
                         backgroundColor: "#76b82a",
                       },
                     }}
-                    href="https://wa.me/51999999999"
+                    href="https://wa.me/51976865540"
                     target="_blank"
                     startIcon={<WhatsAppIcon sx={{ width: 20, height: 20 }} />}
                   >
@@ -236,7 +236,7 @@ const NavBar = () => {
                       backgroundColor: "#76b82a",
                     },
                   }}
-                  href="https://wa.me/51999999999"
+                  href="https://wa.me/51976865540"
                   target="_blank"
                 >
                   <WhatsAppIcon sx={{ width: 20, height: 20 }} />

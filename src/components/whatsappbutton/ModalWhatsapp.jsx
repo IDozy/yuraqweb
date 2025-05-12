@@ -6,7 +6,7 @@ const ModalWhatsapp = ({ onClose, imageCompany, company }) => {
   const [whatsappURL, setWhatsappURL] = useState("");
 
   useEffect(() => {
-    const phoneNumber = "51123456789"; // Reemplaza con tu número
+    const phoneNumber = "51976865540"; // Reemplaza con tu número
     const text = message || "Hola, tengo una consulta";
     const encodedText = encodeURIComponent(text);
     
