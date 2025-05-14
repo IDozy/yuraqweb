@@ -4,7 +4,7 @@ import "./CanastasCard.css";
 
 const images = [
   "/canastas1.JPG",
-  "/resp_social3.png"
+  "/Resp_Social4.png"
 ];
 
 const INTERVAL_TIME = 3000; // Puedes modificar aquí el tiempo (en milisegundos)

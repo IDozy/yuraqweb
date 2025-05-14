@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./SegCard.css";
 
-const images = ["/segcard1.JPG", "/segcard2.JPG"];
+const images = [
+  "/segcard1.JPG",
+  "/segcard2.JPG",
+  "/segcard3.JPG",
+  "segcard4.JPG",
+];
 
 const INTERVAL_TIME = 3000; // Puedes modificar aquí el tiempo (en milisegundos)
 
@@ -39,11 +44,12 @@ const SegCard = () => {
         </AnimatePresence>
       </div>
       <div className="card-content">
-        <h2>Compromiso con la Seguridad</h2>
+        <h2>Comprometidos con la Seguridad</h2>
         <p>
-          Nuestra empresa prioriza la seguridad de todos los colaboradores y
-          contratistas. Implementamos rigurosos protocolos de prevención y
-          capacitaciones constantes para mantener un entorno laboral seguro.
+          Nuestra empresa prioriza la seguridad de todos nuestros colaboradores
+          y contratistas. Implementamos rigurosos protocolos de prevención,
+          atención y capacitación constantes para mantener un entorno laboral
+          seguro velando por el bien de los nuestros.
         </p>
       </div>
     </motion.div>

@@ -13,9 +13,9 @@ const AboutCard = () => {
     >
       {/* Imagen */}
       <motion.img
-        src="/Home1.JPG" // Reemplaza por tu ruta real
+        src="/card-abt.JPG" // Reemplaza por tu ruta real
         alt="Sobre nosotros"
-        className="w-full md:w-1/2 h-auto object-cover rounded-lg shadow-lg"
+        className="w-full md:w-1/2 max-h-96 object-contain rounded-lg shadow-lg"
         initial={{ scale: 0.8 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -35,12 +35,11 @@ const AboutCard = () => {
         </h2>
         <p className="text-gray-700 text-lg leading-relaxed text-center md:text-left">
           Teniendo como base el Centro de Producción de Cal Apán Alto, la Sra.
-          Julia Edith Urrutia Cubas, en el año 1993, crea la EMPRESA MINERA
+          Julia Edith Urrutia Cubas, en el año 1994, crea la EMPRESA MINERA
           P'HUYU YURAQ II EIRL. Luego se proyecta a Cajamarca donde la Empresa
           cuenta con un Centro de Producción de Cal en el Centro Poblado
           Puylucana, Baños del Inca y otro Centro de Producción de Cal en Cumbe
-          Mayo, lugar donde está ubicada la Concesión Minera No Metálica ITALO,
-          Cajamarca.
+          Mayo, Cajamarca.
         </p>
       </motion.div>
     </motion.div>

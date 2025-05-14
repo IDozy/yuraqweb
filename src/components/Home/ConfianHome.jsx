@@ -3,13 +3,17 @@ import { motion } from "framer-motion";
 import camaraLogo from "/Clientes_CamaradeComercio.png";
 import newmontLogo from "/Clientes_Newmont.png";
 import shahuindoLogo from "/Clientes_Shahuindo.png";
+import sedacajLogo from '/sedacaj.PNG';
+import fusionLogo from '/fusionexpre.PNG';
 import './ConfianHome.css';
 
 const ConfianHome = () => {
   const clients = [
     { logo: camaraLogo, name: "Cámara de Comercio" },
-    { logo: newmontLogo, name: "Newmont" },
-    { logo: shahuindoLogo, name: "Shahuindo" }
+    { logo: newmontLogo, name: "Yanacocha" },
+    { logo: shahuindoLogo, name: "Shahuindo" },
+    { logo: sedacajLogo, name:"Sedacaj"},
+    { logo: fusionLogo, name: "Fusion Express"}
   ];
   
   const [currentIndex, setCurrentIndex] = useState(0);

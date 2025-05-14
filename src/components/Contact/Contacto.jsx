@@ -82,7 +82,7 @@ export default function Contacto() {
       <section className="contacto-formulario">
         <h3>Completa el siguiente formulario y uno de nuestros asesores se comunicará contigo.</h3>
         <form
-          action="https://formsubmit.co/dobide8662@hazhab.com"
+          action="https://formsubmit.co/minphuyuii@yahoo.es"
           method="POST"
           onSubmit={validarFormulario}
         >

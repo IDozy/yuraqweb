@@ -116,7 +116,7 @@ const HeadeIso = () => {
             {!isVerySmallScreen && (
               <Box 
                 component="img" 
-                src="/iso14001.png" 
+                src="/homologada.png" 
                 alt="Certificado ISO" 
                 sx={{
                   height: 110,

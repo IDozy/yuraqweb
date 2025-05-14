@@ -43,11 +43,12 @@
 
 .reconocimiento-card img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 750px; /* o 300px según tu preferencia */
+  object-fit: cover; /* o 'contain' si quieres mostrar todo, aunque puede dejar espacio vacío */
   display: block;
   border-bottom: 3px solid #FFC300;
 }
+
 
 .reconocimiento-info {
   padding: 25px;

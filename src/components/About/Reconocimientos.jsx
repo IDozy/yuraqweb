@@ -5,14 +5,14 @@ import "./Reconocimientos.css";
 const reconocimientos = [
   {
     id: 1,
-    imagen: "/reconocimiento.png",
-    titulo: "Reconocimiento en Responsabilidad Social",
+    imagen: "/reconocimiento3.JPG",
+    titulo: "Reconocimiento por promover el Desarrollo Sostenible",
     descripcion: "Otorgado por la empresa Newmont Yanacocha siendo fruto de aplicar buenas prácticas en sostenibilidad y responsabilidad social con las comunidades en nuestra área de operaciones.",
   },
   {
     id: 2,
-    imagen: "/reconocimiento1.png",
-    titulo: "Reconocimiento al Cumplimiento",
+    imagen: "/reconocimiento2.JPG",
+    titulo: "Reconocimiento al Buen gobierno Corporativo",
     descripcion: "Reconocimiento por el uso de tecnología en procesos mineros sostenibles.",
   },
 ];

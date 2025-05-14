@@ -10,9 +10,9 @@ const certifications = [
     description: "Certificación en sistemas de gestión de calidad.",
   },
   {
-    image: "/Certificacion_Homologada.png",
-    title: "Empresa Homologada",
-    description: "Demostrando una capacidad excepcional.",
+    image: "/iso14001.png",
+    title: "ISO 14001",
+    description: "Certificación en medio ambiente .",
   },
   {
     image: "/iso18001.png",
