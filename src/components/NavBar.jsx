@@ -48,7 +48,7 @@ const NavBar = () => {
     backgroundColor: bgColor,
     textTransform: "uppercase",
     fontWeight: 500,
-    fontSize: "0.85rem",
+    fontSize: "0.7rem",
     height: "64px",
     borderRadius: 0,
     px: 3,
@@ -129,7 +129,7 @@ const NavBar = () => {
 
                   {/* Productos Menu */}
                   <Button
-                    sx={navButtonStyle("var(--color-primary)")}
+                    sx={navButtonStyle()}
                     onClick={handleMenuOpen(setAnchorElProducts)}
                   >
                     PRODUCTOS

@@ -30,7 +30,7 @@ const Home = () => {
       <Segmentos/>
       <ConfianHome/>
       <Footer/>
-      <Whatsapp />
+    
     </>
   );
 };
