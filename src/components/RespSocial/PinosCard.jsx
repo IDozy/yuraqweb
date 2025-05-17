@@ -27,7 +27,7 @@ const SembradioPinosCard = () => {
       viewport={{ once: true }}
     >
       <div className="card-content">
-        <h2>Sembrio de pinos</h2>
+        <h2>Sembrío de pinos</h2>
         <p>
           Como parte de nuestras acciones de sostenibilidad ambiental, llevamos a cabo campañas de sembrado de pinos 
           con el objetivo de reducir la huella de carbono y promover ecosistemas sostenibles. 

@@ -33,12 +33,12 @@ export default function CardProduction() {
       image: "/centro_puyllucana.JPG",
     },
     {
-      title: "Centro de Producción Apán Alto",
+      title: "Centro de Producción Apan Alto",
       description: (
         <>
           Nuestra nueva planta estratégicamente ubicada para atender la demanda creciente en la región. Equipada con tecnología moderna para garantizar la más alta calidad en nuestros productos.
           <br /><br />
-          <strong>Ubicación:</strong> Caserío de Apán Alto, Distrito de Hualgayoc, Cajamarca.<br />
+          <strong>Ubicación:</strong> Caserío de Apan Alto, Distrito de Hualgayoc, Cajamarca.<br />
           <strong>Distancias:</strong>  Kilómetro 97 de la carretera Cajamarca - Bambamarca.<br />
           <strong>Número de Hornos:</strong> 02 unidades en estado operativo.<br />
           <strong>Producción:</strong> 650 Toneladas/Mes.
