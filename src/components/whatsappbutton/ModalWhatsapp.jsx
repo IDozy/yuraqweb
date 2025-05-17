@@ -71,7 +71,7 @@ const ModalWhatsapp = ({ onClose, imageCompany, company }) => {
           aria-label="Enviar mensaje"
         >
           <svg 
-            viewBox="0 0 24 24" 
+            viewBox="0 0 30 25" 
             className="whatsapp-modal__send-icon"
           >
             <path fill="currentColor" d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />

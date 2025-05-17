@@ -30,9 +30,10 @@ const certifications = [
 
 const CertificationsSection = () => {
   return (
-    <section className="certifications-section">
+    <section className="certifications-section" >
       <motion.h2
         className="certifications-title"
+        style={{ color: "var(--color-primary)" }}
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
