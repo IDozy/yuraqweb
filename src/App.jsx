@@ -9,6 +9,8 @@ import RespSocial from "./pages/RespSocial";
 import SecurityOcu from "./pages/SecurityOcu";
 import CalAgricola from "./pages/CalAgricola";
 import CalGranulada from "./pages/CalGranulada";
+import PoliticasPrivacidad from "./pages/PoliticasPrivacidad";
+import TerminosCondiciones from "./pages/TerminosCondiciones";
 import Whatsapp from "./components/whatsappbutton/Whatsapp";
 
 const MycalPage = () => {
@@ -26,6 +28,8 @@ const MycalPage = () => {
           <Route path="/desarrollo-humano" element={<DevHuman />} />
           <Route path="/cal-hidratada-agricola" element={<CalAgricola />} />
           <Route path="/cal-viva-granulada" element={<CalGranulada />} />
+          <Route path="/politicas-privacidad" element={<PoliticasPrivacidad/>} />
+          <Route path="/terminos-condiciones" element={<TerminosCondiciones/>} />
         </Routes>
       </BrowserRouter>
     </>

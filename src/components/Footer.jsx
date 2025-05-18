@@ -7,7 +7,7 @@ import {
   Typography,
   IconButton,
 } from "@mui/material";
-import { Facebook, Instagram, Twitter, GitHub } from "@mui/icons-material"; // Importar los iconos de MUI
+import { Facebook, LinkedIn } from "@mui/icons-material"; // Importar los iconos de MUI
 
 const Footer = () => {
   return (
@@ -46,15 +46,15 @@ const Footer = () => {
                 gutterBottom
                 sx={{ color: "var(--color-primary)" }}
               >
-                About
+                Acerca
               </Typography>
               <Box>
-                <Link href="#" sx={{ color: "#fff", textDecoration: "none" }}>
+                <Link href="/nosotros" sx={{ color: "#fff", textDecoration: "none" }}>
                   Nosotros
                 </Link>
               </Box>
               <Box>
-                <Link href="#" sx={{ color: "#fff", textDecoration: "none" }}>
+                <Link href="/cal-hidratada-agricola" sx={{ color: "#fff", textDecoration: "none" }}>
                   Productos
                 </Link>
               </Box>
@@ -66,10 +66,10 @@ const Footer = () => {
                 gutterBottom
                 sx={{ color: "var(--color-primary)" }}
               >
-                Follow us
+                Siguenos
               </Typography>
               <Box>
-                <Link href="#" sx={{ color: "#fff", textDecoration: "none" }}>
+                <Link href="/contacto" sx={{ color: "#fff", textDecoration: "none" }}>
                   Contacto
                 </Link>
               </Box>
@@ -89,12 +89,12 @@ const Footer = () => {
                 Legal
               </Typography>
               <Box>
-                <Link href="#" sx={{ color: "#fff", textDecoration: "none" }}>
+                <Link href="/politicas-privacidad" sx={{ color: "#fff", textDecoration: "none" }}>
                   Politicas de privacidad
                 </Link>
               </Box>
               <Box>
-                <Link href="#" sx={{ color: "#fff", textDecoration: "none" }}>
+                <Link href="/terminos-condiciones" sx={{ color: "#fff", textDecoration: "none" }}>
                   Terminos y condiciones
                 </Link>
               </Box>
@@ -117,17 +117,11 @@ const Footer = () => {
           </Grid>
           <Grid item>
             <Box display="flex" gap={2}>
-              <IconButton href="#" target="_blank" sx={{ color: "#fff" }}>
+              <IconButton href="https://web.facebook.com/minphuyuii" target="_blank" sx={{ color: "#fff" }}>
                 <Facebook fontSize="small" />
               </IconButton>
-              <IconButton href="#" target="_blank" sx={{ color: "#fff" }}>
-                <Instagram fontSize="small" />
-              </IconButton>
-              <IconButton href="#" target="_blank" sx={{ color: "#fff" }}>
-                <Twitter fontSize="small" />
-              </IconButton>
-              <IconButton href="#" target="_blank" sx={{ color: "#fff" }}>
-                <GitHub fontSize="small" />
+              <IconButton href="https://www.linkedin.com/in/minera-phuyu-yuraq-ll-eirl-a6991064/" target="_blank" sx={{ color: "#fff" }}>
+                <LinkedIn fontSize="small" />
               </IconButton>
             </Box>
           </Grid>

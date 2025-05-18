@@ -16,7 +16,7 @@ const AmautasCard = () => {
         <h2>Visita guiada para "Amautas Mineros"</h2>
         <p>
           Como parte de nuestro compromiso social, promovemos las visitas guiadas para cualquier
-          agrupación estudiantil interesada en conocer nuestras instalaciones. El grupo Amautas Mineros visitó nuestras instalaciones del centro de producción ubicado en "INGRESAR LUGAR", 
+          agrupación estudiantil interesada en conocer nuestras instalaciones. El grupo Amautas Mineros visitó nuestras instalaciones del centro de producción de Apan Alto, 
           donde conocieron el funcionamiento y parte de la producción principal del lugar.
         </p>
       </div>

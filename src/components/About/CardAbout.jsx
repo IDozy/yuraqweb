@@ -34,7 +34,7 @@ const AboutCard = () => {
           Conoce Nuestra Historia
         </h2>
         <p className="text-gray-700 text-lg leading-relaxed text-center md:text-left">
-          Teniendo como base el Centro de Producción de Cal Apán Alto, la Sra.
+          Teniendo como base el Centro de Producción de Cal Apan Alto, la Sra.
           Julia Edith Urrutia Cubas, en el año 1994, crea la EMPRESA MINERA
           P'HUYU YURAQ II EIRL. Luego se proyecta a Cajamarca donde la Empresa
           cuenta con un Centro de Producción de Cal en el Centro Poblado

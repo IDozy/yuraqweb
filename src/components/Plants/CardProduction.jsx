@@ -36,7 +36,7 @@ export default function CardProduction() {
       title: "Centro de Producción Apan Alto",
       description: (
         <>
-          Nuestra nueva planta estratégicamente ubicada para atender la demanda creciente en la región. Equipada con tecnología moderna para garantizar la más alta calidad en nuestros productos.
+          Nuestra principal planta estratégicamente ubicada para atender la demanda creciente en la región. Equipada con tecnología moderna para garantizar la más alta calidad en nuestros productos.
           <br /><br />
           <strong>Ubicación:</strong> Caserío de Apan Alto, Distrito de Hualgayoc, Cajamarca.<br />
           <strong>Distancias:</strong>  Kilómetro 97 de la carretera Cajamarca - Bambamarca.<br />
