@@ -51,7 +51,7 @@ const NavBar = () => {
     fontSize: "0.7rem",
     height: "64px",
     borderRadius: 0,
-    px: 3,
+    pl: 2.5,
     transition: "background-color 0.3s",
     "&:hover": {
       backgroundColor: "var(--color-primary)",
