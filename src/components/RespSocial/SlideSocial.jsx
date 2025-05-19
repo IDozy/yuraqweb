@@ -5,12 +5,12 @@ const slides = [
   {
     title: "Comprometidos con la Comunidad",
     description: "Realizamos programas sociales que benefician a las zonas aledañas a nuestras operaciones.",
-    image: "/Resp_Social4.png", // Cambia por la ruta  imagen
+    image: "/canastas2.webp", // Cambia por la ruta  imagen
   },
   {
     title: "Sostenibilidad en Acción",
     description: "Promovemos prácticas responsables para proteger el medio ambiente y el desarrollo local.",
-    image: "/Resp_Social8.JPG", // Cambia por la ruta imagen
+    image: "/resp_slide.webp", // Cambia por la ruta imagen
   },
 ];
 

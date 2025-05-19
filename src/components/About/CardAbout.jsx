@@ -13,7 +13,7 @@ const AboutCard = () => {
     >
       {/* Imagen */}
       <motion.img
-        src="/card-abt.JPG" // Reemplaza por tu ruta real
+        src="/card_historia.webp" // Reemplaza por tu ruta real
         alt="Sobre nosotros"
         className="w-full md:w-1/2 max-h-96 object-contain rounded-lg shadow-lg"
         initial={{ scale: 0.8 }}

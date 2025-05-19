@@ -10,25 +10,25 @@ const segmentos = [
   {
     id: 1,
     title: "Minería",
-    image: "/mineria.png",
+    image: "/mineria.webp",
     icon: <EngineeringIcon style={{ fontSize: 60 }} />,
   },
   {
     id: 2,
     title: "Construcción",
-    image: "/construccion.png",
+    image: "/construccion.webp",
     icon: <ConstructionIcon style={{ fontSize: 60 }} />,
   },
   {
     id: 3,
     title: "Agricultura",
-    image: "/agricultura.png",
+    image: "/agricultura.webp",
     icon: <AgricultureIcon style={{ fontSize: 60 }} />,
   },
   {
     id: 4,
     title: "Metalurgia",
-    image: "/metalurgia.png",
+    image: "/metalurgia.webp",
     icon: <Metalurgia style={{ fontSize: 60 }} />,
   },
 ];

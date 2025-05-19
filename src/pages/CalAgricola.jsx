@@ -13,7 +13,7 @@ const CalAgricola = () => {
       <NavBar />
       <div className="container mx-auto py-12">
         <ProductItem
-          image="../../cal-hidratada.png"
+          image="../../cal-hidratada.webp"
           title="Hidróxido de Calcio - Cal Hidratada ( agricola) "
           description="Caliza calcinada mas agua. El hidróxido de calcio, también conocido como cal hidratada o cal agrícola, es un compuesto blanco y fino obtenido al agregar agua al óxido de calcio. Se utiliza ampliamente en la agricultura para corregir la acidez del suelo, mejorar la absorción de nutrientes y optimizar el rendimiento de los cultivos. Su aplicación ayuda a regular el pH, controlar plagas del suelo y favorecer un ambiente microbiológico saludable. Es una opción ecológica y efectiva para el manejo sostenible del terreno agrícola."
           chemistry="CaO: 64% - Ca(OH)2: 84% - MgO: 0.5% - insoluble + SiO2: 0.9% "

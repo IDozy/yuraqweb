@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import camaraLogo from "/Clientes_CamaradeComercio.png";
-import newmontLogo from "/Clientes_Newmont.png";
-import shahuindoLogo from "/Clientes_Shahuindo.png";
-import sedacajLogo from '/sedacaj.PNG';
-import fusionLogo from '/fusionexpre.PNG';
+import camaraLogo from "/clientes_camaradecomercio.webp";
+import newmontLogo from "/clientes_newmont.webp";
+import shahuindoLogo from "/clientes_shahuindo.webp";
+import sedacajLogo from '/sedacaj.webp';
+import fusionLogo from '/fusionexpre.webp';
 import './ConfianHome.css';
 
 const ConfianHome = () => {

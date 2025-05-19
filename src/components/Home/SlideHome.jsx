@@ -4,19 +4,19 @@ import './SlideHome.css';
 
 const carouselItems = [
   {
-    src: '/Slide1.JPG',
+    src: '/slide_home1.webp',
     alt: 'Primera imagen',
     title: 'Un Nuevo Rostro',
     description: 'Somos conocidos por años y cada vez más queridos.',
   },
   {
-    src: '/Slide2.JPG',
+    src: '/slide_home2.webp',
     alt: 'Segunda imagen',
     title: 'Operativilidad Continua',
     description: 'El largo camino en nuestro trabajo es reflejado en la confianza generada.',
   },
   {
-    src: '/Home6.JPG',
+    src: '/slide_home3.webp',
     alt: 'Tercera imagen',
     title: 'Supervición Rigurosa',
     description: 'Cuidamos de nuestro trabajo como de nuestros operadores.',

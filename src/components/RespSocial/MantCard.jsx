@@ -12,7 +12,7 @@ const MantenimientoCard = () => {
     >
       {/* Imagen al lado izquierdo */}
       <div className="card-image">
-        <img src="/mantenimiento_4km.png" alt="Mantenimiento vial" />
+        <img src="/mantenimiento4km.webp" alt="Mantenimiento vial" />
       </div>
 
       {/* Texto al lado derecho */}

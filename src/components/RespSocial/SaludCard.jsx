@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./SaludCard.css"; // Asegúrate de importar esta hoja CSS
 
 const images = [
-  "/resp_social5.jpg",
-  "/salud2.png",
-  "/salud3.JPG" // Cambia esta ruta por tu segunda imagen real
+  "/salud1.webp",
+  "/salud2.webp",
+  "/salud3.webp" // Cambia esta ruta por tu segunda imagen real
 ];
 
 export default function SaludCard() {

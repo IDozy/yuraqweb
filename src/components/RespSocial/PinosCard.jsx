@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./AmautasCard.css";
 
 const imageList = [
-  "/pinos.png",
-  "/pinos2.JPG",
-  "/pinos3.JPG",
+  "/pinos.webp",
+  "/pinos2.webp",
+  "/pinos3.webp",
 ];
 
 const SembradioPinosCard = () => {

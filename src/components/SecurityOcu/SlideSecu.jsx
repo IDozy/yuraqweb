@@ -5,12 +5,12 @@ const slides = [
   {
     title: "Comprometidos con la Seguridad",
     description: "Promovemos prácticas de seguridad continuas para proteger la salud de todos los que trabajan en nuestro entorno local.",
-    image: "/seguridad1.JPG", 
+    image: "/seguridad1.webp", 
   },
   {
     title: "Responsabilidad en Acción",
     description: "Realizamos charlas de seguridad para todos los trabajadores siempre antes de iniciar nuestras operaciones. ",
-    image: "/seguridad2.JPG", 
+    image: "/seguridad2.webp", 
   },
 ];
 

@@ -5,22 +5,22 @@ import "./CertifiHome.css"; // Importamos el CSS
 
 const certifications = [
   {
-    image: "/iso9001.png",
+    image: "/iso9001.webp",
     title: "ISO 9001",
     description: "Certificación en sistemas de gestión de calidad.",
   },
   {
-    image: "/iso14001.png",
+    image: "/iso14001.webp",
     title: "ISO 14001",
     description: "Certificación en medio ambiente .",
   },
   {
-    image: "/iso18001.png",
+    image: "/iso18001.webp",
     title: "OHSAS 18001",
     description: "Certificación en seguridad y salud ocupacional.",
   },
   {
-    image: "/iso45001.png",
+    image: "/iso45001.webp",
     title: "ISO 45001",
     description: "Gestión de seguridad y salud en el trabajo.",
   },

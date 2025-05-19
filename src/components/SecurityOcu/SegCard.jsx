@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./SegCard.css";
 
 const images = [
-  "/segcard1.JPG",
-  "/segcard2.JPG",
-  "/segcard3.JPG",
-  "segcard4.JPG",
+  "/segcard1.webp",
+  "/segcard2.webp",
+  "/segcard3.webp",
+  "/segcard4.webp",
 ];
 
 const INTERVAL_TIME = 3000; // Puedes modificar aquí el tiempo (en milisegundos)

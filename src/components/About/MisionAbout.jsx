@@ -95,7 +95,7 @@ export default function MissionCard() {
 
       {/* Imagen animada */}
       <motion.img
-        src="/Mision.JPG"
+        src="/mision.webp"
         alt="Misión"
         style={{
           width: "100%",

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./PremiacionSlide.css";
-import premiacionImg from "/Premiacion1.jpg";
+import premiacionImg from "/premiacion1.webp";
 
 const PremiacionSlide = () => {
   const [ref, inView] = useInView({

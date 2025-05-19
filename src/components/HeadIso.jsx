@@ -48,8 +48,8 @@ const HeadeIso = () => {
           >
             <Box 
               component="img" 
-              src="/Logo_Phuyuyuraq.jpg" 
-              alt="Logo Mycal" 
+              src="/logo_phuyuyuraq.webp" 
+              alt="Logo empresa" 
               sx={{
                 height: isVerySmallScreen ? 120 : 170,
                 maxWidth: '100%'
@@ -112,12 +112,12 @@ const HeadeIso = () => {
               </Box>
             </Box>
 
-            {/* Certificado ISO */}
+            {/* va la foto de Empresa Homologada */}
             {!isVerySmallScreen && (
               <Box 
                 component="img" 
-                src="/homologada.png" 
-                alt="Certificado ISO" 
+                src="/homologada.webp" 
+                alt="Empresa Homologada" 
                 sx={{
                   height: 110,
                   mx: isSmallScreen ? 0 : 2,

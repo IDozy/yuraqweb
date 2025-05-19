@@ -23,7 +23,7 @@ const AmautasCard = () => {
 
       {/* Imagen a la derecha */}
       <div className="card-image">
-        <img src="/amautas_mineros.png" alt="Amautas mineros" />
+        <img src="/amautas_mineros.webp" alt="Amautas mineros" />
       </div>
     </motion.div>
   );

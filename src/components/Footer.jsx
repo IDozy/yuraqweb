@@ -28,7 +28,7 @@ const Footer = () => {
           <Grid item>
             <Box display="flex" alignItems="center">
               <img
-                src="Logo_Phuyuyuraq.jpg"
+                src="logo_phuyuyuraq.webp"
                 alt="Logo"
                 style={{
                   width: 120,

@@ -18,7 +18,7 @@ export default function CardCompanyHome() {
   return (
     <div className="hero-empresa-container">
       <img
-        src="/Home3.PNG"
+        src="/card_companyhome.webp"
         alt="Fondo de la empresa"
         className="hero-empresa-image"
       />

@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./CanastasCard.css";
 
 const images = [
-  "/canastas1.JPG",
-  "/Resp_Social4.png"
+  "/canastas1.webp",
+  "/canastas2.webp"
 ];
 
 const INTERVAL_TIME = 3000; // Puedes modificar aquí el tiempo (en milisegundos)

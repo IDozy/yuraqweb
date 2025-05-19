@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./Navidad.css"; // Asegúrate de importar esta hoja CSS
 
 const images = [
-  "/navidad1.JPG",
-  "/navidad2.JPG", // Cambia esta ruta por tu segunda imagen real
+  "/navidad1.webp",
+  "/navidad2.webp", // Cambia esta ruta por tu segunda imagen real
 ];
 
 export default function Navidad() {

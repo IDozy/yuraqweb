@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./ResponsabilidadCard.css";
 
 const images = [
-  "/Resp_Social7.JPG",
-  "/resp_social9.jpg"
+  "/modulos.webp",
+  "/modulos1.webp"
 ];
 
 const INTERVAL_TIME = 3000; // Puedes modificar aquí el tiempo (en milisegundos)

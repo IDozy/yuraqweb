@@ -16,7 +16,7 @@ export default function CardProduction() {
           <strong>Producción:</strong> 2,288 Toneladas/Mes.
         </>
       ),
-      image: "/centroCumbemayo.PNG",
+      image: "/centro_cumbemayo.webp",
     },
     {
       title: "Centro de Producción Puylucana",
@@ -30,7 +30,7 @@ export default function CardProduction() {
           <strong>Producción:</strong> 650 Toneladas/Mes.
         </>
       ),
-      image: "/centro_puyllucana.JPG",
+      image: "/centro_puyllucana.webp",
     },
     {
       title: "Centro de Producción Apan Alto",
@@ -44,7 +44,7 @@ export default function CardProduction() {
           <strong>Producción:</strong> 650 Toneladas/Mes.
         </>
       ),
-      image: "/centroapanalto.jpeg",
+      image: "/centro_apanalto.webp",
     }
   ];
 

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import WhatsAppButton from "./WhatsAppButton";
-import defaultCompanyLogo from "/Logo_Phuyuyuraq.jpg";
+import defaultCompanyLogo from "/logo_phuyuyuraq.webp";
 
 const Whatsapp = ({
   companyName = "P'huyu Yuraq",

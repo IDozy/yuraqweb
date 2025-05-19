@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./SecCard.css"; // Asegúrate de importar esta hoja CSS
 
 const images = [
-  "/seccard1.JPG",
-  "/seccard2.JPG",
-  "/seccard3.JPG" // Cambia esta ruta por tu segunda imagen real
+  "/seccard1.webp",
+  "/seccard2.webp",
+  "/seccard3.webp" // Cambia esta ruta por tu segunda imagen real
 ];
 
 export default function SecCard() {

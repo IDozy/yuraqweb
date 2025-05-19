@@ -38,7 +38,7 @@ export default function HuellaCarbono() {
           >
             <div className="huella-card">
               <img
-                src="/certificado-carbono.png"
+                src="/certificado_carbono.webp"
                 alt="Certificado de Huella de Carbono"
                 className="huella-img"
               />

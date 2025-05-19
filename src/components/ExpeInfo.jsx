@@ -7,7 +7,7 @@ const ExpeInfo = () => {
       <div className="w-full md:w-1/2 relative">
         <img
           className="w-full h-auto object-cover  -ml-5 shadow-[-25px_25px_rgba(255,195,0,1)]"
-          src="/Home2.JPG"
+          src="/expeinfo.webp"
           alt="Imagen descriptiva"
         />
       </div>

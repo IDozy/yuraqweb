@@ -3,12 +3,12 @@ import "./CarrouselAbout.css";
 
 const slides = [
   {
-    image: "/About_Empresa.JPG",
+    image: "/about_carrousel.webp",
     title: "¿Quiénes Somos?",
     description: "Somos una empresa minera dedicada a brindar soluciones en producción de CAL de calidad.",
   },
   {
-    image: "/About_Empresa1.JPG",
+    image: "/about_carrousel1.webp",
     title: "Nuestro Valor",
     description: "Es ofrecer el mejor servicio en abastecimiento, adaptándonos a las necesidades de nuestros clientes.",
   },

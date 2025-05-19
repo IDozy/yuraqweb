@@ -21,7 +21,7 @@ export default function VisionCard() {
     >
       {/* Imagen animada */}
       <motion.img
-        src="/Vision.JPG"
+        src="/vision.webp"
         alt="Visión"
         style={{
           width: "100%",

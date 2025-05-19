@@ -51,7 +51,7 @@ const ProductionPlantsCard = () => {
           </div>
           <div className="plants-image-container">
             <motion.img
-              src="/Card1.JPG"
+              src="/card_plantas.webp"
               alt="Planta de producción"
               className="plants-image"
               initial={{ opacity: 0, x: 50 }}

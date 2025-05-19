@@ -5,12 +5,12 @@ const slides = [
   {
     title: "Comprometidos con la Salud y el Deporte",
     description: "Realizamos programas deportivos de integración entre toda la familia Phuyuyuraq.",
-    image: "/desarrollo1.JPG", // Cambia por la ruta  imagen
+    image: "/desarrollo1.webp", // Cambia por la ruta  imagen
   },
   {
     title: "Compartiendo con nuestros trabajadores",
     description: "Promovemos un ambiente laboral acogedor por ello buscamos celebrar todo tipo de logro entre nuestros miembros.",
-    image: "/resp_social1.JPG", // Cambia por la ruta imagen
+    image: "/desarrollo2.webp", // Cambia por la ruta imagen
   },
 ];
 
