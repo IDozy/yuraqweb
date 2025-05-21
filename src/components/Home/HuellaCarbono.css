@@ -1,52 +1,66 @@
 .huella-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem 2rem;
-    gap: 2rem;
-    flex-wrap: wrap;
-    background-color: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  background-color: #f5f5f5;
+}
+
+/* Asegura orden correcto en Safari */
+.huella-text {
+  flex: 1 1 45%;
+  min-width: 300px;
+  order: 1; /* texto primero */
+}
+
+.huella-image {
+  flex: 1 1 45%;
+  min-width: 300px;
+  order: 2; /* imagen segundo */
+}
+
+@media (max-width: 768px) {
+  .huella-container {
+    flex-direction: column;
   }
-  
-  .huella-text {
-    flex: 1 1 45%;
-    min-width: 280px;
-  }
-  .huella-title-yellow {
-    font-size: 2rem;
-    color: var(--color-primary);
-   
-    margin-bottom: 1rem;
-  }
-  
-  .huella-title {
-    font-size: 2rem;
-    color: #2e7d32;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .huella-description {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
-  }
-  
+
+  .huella-text,
   .huella-image {
-    flex: 1 1 45%;
-    min-width: 280px;
-  }
-  
-  .huella-card {
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 16px rgba(242, 232, 139, 0.15);
-    background: var(--color-primary);
-  }
-  
-  .huella-img {
+    order: unset;
     width: 100%;
-    height: auto;
-    display: block;
   }
-  
+}
+
+.huella-title-yellow {
+  font-size: 2rem;
+  color: #FFC300;
+  margin-bottom: 1rem;
+}
+
+.huella-title {
+  font-size: 2rem;
+  color: #2e7d32;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.huella-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.huella-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(242, 232, 139, 0.15);
+  background: #FFC300;
+}
+
+.huella-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

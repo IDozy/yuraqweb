@@ -6,20 +6,20 @@ const carouselItems = [
   {
     src: '/slide_home1.webp',
     alt: 'Primera imagen',
-    title: 'Un Nuevo Rostro',
-    description: 'Somos conocidos por años y cada vez más queridos.',
+    title: 'Nuestra Esencia, Grabada en la Solidez',
+    description: 'Somos conocidos por años y cada vez más queridos, brindando lo que la comunidad merece.',
   },
   {
     src: '/slide_home2.webp',
     alt: 'Segunda imagen',
-    title: 'Operativilidad Continua',
-    description: 'El largo camino en nuestro trabajo es reflejado en la confianza generada.',
+    title: 'Operatividad Continua',
+    description: 'El largo camino en nuestro trabajo es reflejado en la confianza generada por los años que venimos trabajando.',
   },
   {
     src: '/slide_home3.webp',
     alt: 'Tercera imagen',
-    title: 'Supervición Rigurosa',
-    description: 'Cuidamos de nuestro trabajo como de nuestros operadores.',
+    title: 'Supervisión Rigurosa',
+    description: 'Cuidamos de nuestro trabajo como de nuestros operadores, nuestra salud es la prioridad.',
   },
 ];
 

@@ -17,7 +17,7 @@ const CalGranulada = () => {
           title="Óxido de Calcio - Cal Viva Granulada "
           description="La cal viva granulada, también conocida como óxido de calcio, es un producto mineral de alta pureza obtenido mediante la calcinación de piedra caliza seleccionada. Su presentación en gránulos facilita la manipulación, transporte y aplicación en diversas superficies. Es ampliamente utilizada para neutralizar la acidez del suelo, mejorar su estructura física y aumentar la disponibilidad de nutrientes esenciales para las plantas. Además, su alto contenido de calcio la convierte en una fuente eficaz y rápida para corregir deficiencias nutricionales. También se emplea en el tratamiento de aguas, en la industria de la construcción, en procesos metalúrgicos y como insumo en la elaboración de fertilizantes compuestos."
           chemistry="CaO: 80% - MgO: 1.8% - SiO2: 1.82% - Ai2O3: 0.25% - Fe2O3: 0.8% CAS N°: 1305 - 78 - 8"
-          identification="Cal Viva Oxido de calcio, Polvo blanco fino, ligeramente higroscópico."
+          identification="Cal Viva, Óxido de calcio, Polvo blanco fino, ligeramente higroscópico."
           usage="• Corrección de acidez del suelo en la agricultura, elevando el pH para mejorar la absorción de nutrientes.
          • Mejora de la estructura del suelo, promoviendo una mayor aireación y retención de humedad.
          • Fuente de calcio de rápida asimilación para cultivos que requieren este nutriente esencial.

@@ -10,7 +10,7 @@ const slides = [
   {
     title: "Sostenibilidad en Acción",
     description: "Promovemos prácticas responsables para proteger el medio ambiente y el desarrollo local.",
-    image: "/resp_slide.webp", // Cambia por la ruta imagen
+    image: "/resp_slider.webp", // Cambia por la ruta imagen
   },
 ];
 

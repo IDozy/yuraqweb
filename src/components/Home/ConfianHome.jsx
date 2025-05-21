@@ -13,7 +13,7 @@ const ConfianHome = () => {
     { logo: newmontLogo, name: "Yanacocha" },
     { logo: shahuindoLogo, name: "Shahuindo" },
     { logo: sedacajLogo, name:"Sedacaj"},
-    { logo: fusionLogo, name: "Fusion Express"}
+    { logo: fusionLogo, name: "Fussion Express"}
   ];
   
   const [currentIndex, setCurrentIndex] = useState(0);

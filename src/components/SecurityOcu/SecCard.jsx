@@ -28,9 +28,9 @@ export default function SecCard() {
     >
       {/* Texto */}
       <div className="campana-content">
-        <h2>Realizamos campañas de Consietización</h2>
+        <h2>Realizamos Campañas de Concientización</h2>
         <p>
-          Nuestras charlas de seguridad en operaciones son vitales para la protección de nuestros colaboradores, aprenden procedimientos clave y cómo identificar riesgos específicos participan activamente para un trabajo seguro su bienestar es primordial en cada tarea y juntos construimos un ambiente laboral más seguro.
+          Nuestras charlas de seguridad en operaciones son vitales para la protección de nuestros colaboradores. Aprenden procedimientos clave y cómo identificar riesgos específicos, participan activamente para un trabajo seguro. Su bienestar es primordial en cada tarea y juntos construimos un ambiente laboral más seguro.
         </p>
       </div>
 

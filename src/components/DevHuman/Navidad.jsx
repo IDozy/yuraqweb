@@ -29,8 +29,8 @@ export default function Navidad() {
       <div className="campana-content">
         <h2>Compartir Navideños</h2>
         <p>
-          Nos agrada celebrar épocas navideñas por esto organizamos celebraciones como el amigo secreto buscando fomentar
-          el compartir mutuo entre compañeros de trabajo, a su vez nos reunimos con las familias de nuestros colaboradores 
+          Nos agrada celebrar épocas navideñas, por esto organizamos celebraciones como el amigo secreto buscando fomentar
+          el compartir mutuo entre compañeros de trabajo, Y a su vez nos reunimos con las familias de nuestros colaboradores 
           para una pequeña chocolatada.
         </p>
       </div>

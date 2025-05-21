@@ -13,7 +13,7 @@ const reconocimientos = [
     id: 2,
     imagen: "/reconocimiento2.webp",
     titulo: "Reconocimiento al Buen gobierno Corporativo",
-    descripcion: "Reconocimiento por el uso de tecnología en procesos mineros sostenibles.",
+    descripcion: "Nos enorgullece haber sido reconocidos por el CONAO 2024 Cajamarca Online por nuestras prácticas de Buen Gobierno Corporativo. Este reconocimiento subraya nuestro compromiso con la transparencia, la ética y la gestión responsable en todas nuestras operaciones.",
   },
 ];
 

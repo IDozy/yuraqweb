@@ -21,16 +21,16 @@ const ExpeInfo = () => {
           <span className="lato-regular-italic">Minera P'huyu Yuraq II </span>
           es una empresa industrial dedicada a la producción y comercialización
           de óxido de calcio o cal viva y derivados con una gran experiencia por
-          más de 15 años.
+          más de 25 años.
           <br />
           <br />
           <span className="lato-regular-italic">Minera P'huyu Yuraq II </span>es una empresa que se ubica en la periferia de
-          los principales proyectos corporativos mineros y metalúrgicos,
+          los principales proyectos corporativos mineros,
           cumpliendo con los estándares en calidad, seguridad, salud,
-          medioambiente y respeto al entorno social.
+          medioambiente y comportándose con respeto con su entorno social.
         </p>
-        <button className="mt-4 px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#00A9B7] transition">
-          Más de Nosotros
+        <button className="mt-4 px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#FFC300] transition">
+          Brindando calidad para nuestra región
         </button>
       </div>
     </div>

@@ -23,7 +23,7 @@ export default function HuellaCarbono() {
         <p className="huella-description">
           Nuestra empresa ha recibido el certificado oficial de huella de
           carbono, que reconoce nuestro esfuerzo en reducir emisiones y aplicar
-          procesos sostenibles. Estamos comprometidos con un futuro más verde y
+          procesos sostenibles estamos comprometidos con un futuro más verde y
           responsable.
         </p>
       </motion.div>

@@ -66,7 +66,7 @@ const Footer = () => {
                 gutterBottom
                 sx={{ color: "var(--color-primary)" }}
               >
-                Siguenos
+                Síguenos
               </Typography>
               <Box>
                 <Link href="/contacto" sx={{ color: "#fff", textDecoration: "none" }}>

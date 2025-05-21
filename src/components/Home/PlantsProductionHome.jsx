@@ -34,7 +34,7 @@ const ProductionPlantsCard = () => {
       >
         <div className="plants-card-content">
           <div className="plants-text-container">
-            <h2 className="plants-title">Conoce nuestras Centros de producción</h2>
+            <h2 className="plants-title">Conoce nuestros Centros de Producción</h2>
             <p className="plants-description">
               Contamos con instalaciones modernas y tecnología de punta para garantizar 
               la más alta calidad en todos nuestros productos. Nuestras centros de producción están 

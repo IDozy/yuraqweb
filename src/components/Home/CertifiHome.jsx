@@ -7,22 +7,17 @@ const certifications = [
   {
     image: "/iso9001.webp",
     title: "ISO 9001",
-    description: "Certificación en sistemas de gestión de calidad.",
+    description: "Certificación en Sistemas de Gestión de Calidad.",
   },
   {
     image: "/iso14001.webp",
     title: "ISO 14001",
-    description: "Certificación en medio ambiente .",
-  },
-  {
-    image: "/iso18001.webp",
-    title: "OHSAS 18001",
-    description: "Certificación en seguridad y salud ocupacional.",
+    description: "Certificación en Medio Ambiente. Por los cuidados rigurozos la momento de realizar nuestros trabajos.",
   },
   {
     image: "/iso45001.webp",
     title: "ISO 45001",
-    description: "Gestión de seguridad y salud en el trabajo.",
+    description: "Gestión de Seguridad y Salud en el Trabajo.",
   },
   
  

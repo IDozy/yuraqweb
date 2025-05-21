@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./HappyB.css"; // Asegúrate de crear este archivo o reutilizar uno
 
 const images = [
-  "/cumple1.JPG",  // Reemplaza con tus rutas reales
-  "/cumple2.JPG",
-  "/cumple3.JPG"
+  "/cumple1.webp",  // Reemplaza con tus rutas reales
+  "/cumple2.webp",
+  "/cumple3.webp"
 ];
 
 const INTERVAL_TIME = 3000;
