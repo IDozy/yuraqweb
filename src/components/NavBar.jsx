@@ -78,7 +78,9 @@ const NavBar = () => {
       label: "PRODUCTOS",
       subItems: [
         { label: "Cal Viva Granulada", to: "/cal-viva-granulada/" },
+        { label: "Cal Viva Molida", to: "/cal-viva-molidada/" },
         { label: "Cal Hidratada Agrícola", to: "/cal-hidratada-agricola/" },
+        { label: "Cal Hidratada Industrial", to: "/cal-hidratada-industrial/" },
       ],
     },
     { label: "CENTROS DE PRODUCCION", to: "/produccion" },
