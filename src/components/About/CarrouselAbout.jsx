@@ -5,12 +5,12 @@ const slides = [
   {
     image: "/about_carrousel.webp",
     title: "¿Quiénes Somos?",
-    description: "Somos una empresa minera dedicada a brindar soluciones en producción de CAL de calidad.",
+    description: "Somos una empresa minera dedicada a brindar soluciones en la producción de CAL de calidad.",
   },
   {
     image: "/about_carrousel1.webp",
     title: "Nuestro Valor",
-    description: "Es ofrecer el mejor servicio en abastecimiento, adaptándonos a las necesidades de nuestros clientes.",
+    description: "Es ofrecer el mejor servicio en abastecimiento, producción de CAL adaptándonos a las necesidades de nuestros clientes.",
   },
 ];
 
@@ -20,7 +20,7 @@ const AboutCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 

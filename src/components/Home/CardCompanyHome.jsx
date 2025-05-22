@@ -33,7 +33,7 @@ export default function CardCompanyHome() {
       >
         <h1 className="hero-empresa-title">Conoce Minera P'huyu Yuraq II</h1>
         <p className="hero-empresa-text">
-          La cual fue fundada con el objetivo de ofrecer soluciones de calidad,
+          La cual fue fundada con el objetivo de ofrecer cal de calidad,
           promoviendo la innovación y el compromiso con nuestros clientes.
         </p>
         <motion.button

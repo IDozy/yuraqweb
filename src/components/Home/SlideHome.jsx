@@ -7,7 +7,7 @@ const carouselItems = [
     src: '/slide_home1.webp',
     alt: 'Primera imagen',
     title: 'Nuestra Esencia, Grabada en la Solidez',
-    description: 'Somos conocidos por años y cada vez más queridos, brindando lo que la comunidad merece.',
+    description: 'Somos conocidos por años y cada vez más queridos, brindando lo que la comunidad merece en soluciones de cal.',
   },
   {
     src: '/slide_home2.webp',

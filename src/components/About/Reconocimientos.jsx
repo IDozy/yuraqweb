@@ -7,7 +7,7 @@ const reconocimientos = [
     id: 1,
     imagen: "/reconocimiento3.webp",
     titulo: "Reconocimiento por promover el Desarrollo Sostenible",
-    descripcion: "Otorgado por la empresa Newmont Yanacocha siendo fruto de aplicar buenas prácticas en sostenibilidad y responsabilidad social con las comunidades en nuestra área de operaciones.",
+    descripcion: "Otorgado por la empresa Newmont Yanacocha siendo fruto de aplicar buenas prácticas en sostenibilidad y responsabilidad social con las comunidades en nuestra área de operaciones y responsabilidad social.",
   },
   {
     id: 2,

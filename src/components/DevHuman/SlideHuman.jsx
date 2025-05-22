@@ -20,7 +20,7 @@ const SlideHuman = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000); // cambia cada 5 segundos
+    }, 6000); // cambia cada 7 segundos
 
     return () => clearInterval(timer);
   }, []);

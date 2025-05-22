@@ -7,27 +7,22 @@ import Metalurgia from '@mui/icons-material/LocalFireDepartmentOutlined';
 
 
 const segmentos = [
+ 
   {
     id: 1,
-    title: "Minería",
-    image: "/mineria.webp",
-    icon: <EngineeringIcon style={{ fontSize: 60 }} />,
-  },
-  {
-    id: 2,
-    title: "Construcción",
-    image: "/construccion.webp",
+    title: "Agroindustria",
+    image: "/agroindustria.webp",
     icon: <ConstructionIcon style={{ fontSize: 60 }} />,
   },
   {
-    id: 3,
+    id: 2,
     title: "Agricultura",
     image: "/agricultura.webp",
     icon: <AgricultureIcon style={{ fontSize: 60 }} />,
   },
   {
-    id: 4,
-    title: "Metalurgia",
+    id: 3,
+    title: "Minería y Metalurgia",
     image: "/metalurgia.webp",
     icon: <Metalurgia style={{ fontSize: 60 }} />,
   },

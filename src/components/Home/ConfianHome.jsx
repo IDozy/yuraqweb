@@ -11,7 +11,6 @@ const ConfianHome = () => {
   const clients = [
     { logo: camaraLogo, name: "Cámara de Comercio" },
     { logo: newmontLogo, name: "Yanacocha" },
-    { logo: shahuindoLogo, name: "Shahuindo" },
     { logo: sedacajLogo, name:"Sedacaj"},
     { logo: fusionLogo, name: "Fussion Express"}
   ];

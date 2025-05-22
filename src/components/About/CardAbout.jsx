@@ -37,8 +37,8 @@ const AboutCard = () => {
           Teniendo como base el Centro de Producción de Cal Apan Alto, la Sra.
           Julia Edith Urrutia Cubas, en el año 1994, crea la EMPRESA MINERA
           P'HUYU YURAQ II EIRL. Luego se proyecta a Cajamarca donde la Empresa
-          cuenta con un Centro de Producción de Cal en el Centro Poblado
-          Puylucana, Baños del Inca y otro Centro de Producción de Cal en Cumbe
+          cuenta con un centro de producción de Cal en el centro poblado
+          Puylucana, Baños del Inca y otro centro de producción de Cal en Cumbe
           Mayo, Cajamarca.
         </p>
       </motion.div>

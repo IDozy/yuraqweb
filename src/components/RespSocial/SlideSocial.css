@@ -50,6 +50,7 @@
   .slide-text p {
     font-size: 1.2rem;
     animation: fadeInUp 1s ease;
+    background-color: rgba(37,33, 33, 75%);
   }
   
   .arrow {

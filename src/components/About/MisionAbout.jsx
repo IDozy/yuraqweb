@@ -5,7 +5,7 @@ export default function MissionCard() {
   const cardVariants = {
     offscreen: {
       opacity: 0,
-      y: 50
+      y: 50,
     },
     onscreen: {
       opacity: 1,
@@ -13,15 +13,15 @@ export default function MissionCard() {
       transition: {
         type: "spring",
         bounce: 0.4,
-        duration: 0.8
-      }
-    }
+        duration: 0.8,
+      },
+    },
   };
 
   const imageVariants = {
     offscreen: {
       opacity: 0,
-      x: 50
+      x: 50,
     },
     onscreen: {
       opacity: 1,
@@ -29,9 +29,9 @@ export default function MissionCard() {
       transition: {
         delay: 0.2,
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
@@ -80,16 +80,16 @@ export default function MissionCard() {
             color: "#444",
             lineHeight: 1.8,
             textAlign: "justify",
-            margin: "0 auto"
+            margin: "0 auto",
           }}
         >
-          Producir, comercializar y transportar Óxido de calcio (Cal viva) e
-          Hidróxido de calcio (Cal hidratada), brindando a nuestros clientes un
-          producto de calidad y oportunidad de entrega; comprometidos con el
-          cumplimiento de la legislación peruana vigente relacionada al área
-          laboral, de seguridad y salud ocupacional, medio ambiente y programa
-          de responsabilidad social. Fomentamos la participación de nuestros
-          colaboradores y seguimos la política de la mejora continua.
+          Producir, comercializar y transportar óxido de calcio (cal viva) e
+          hidróxido de calcio (cal hidratada), brindando a nuestros clientes un
+          producto de calidad y una entrega oportuna. Estamos comprometidos con el
+          cumplimiento de la legislación peruana vigente relacionada con el área
+          laboral, la seguridad y salud ocupacional, el medio ambiente y el
+          programa de responsabilidad social. Fomentamos la participación de
+          nuestros colaboradores y seguimos la política de mejora continua.
         </p>
       </motion.div>
 
