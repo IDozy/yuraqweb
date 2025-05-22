@@ -1,0 +1,118 @@
+/* Variables de color */
+:root {
+  --corporate-yellow: #FFC300;
+  --corporate-dark: #333333;
+  --corporate-light: #FFFFFF;
+  --white: #FFFFFF;
+}
+
+/* Contenedor principal */
+.seguridad-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: var(--corporate-light);
+}
+
+/* Tarjeta de seguridad */
+.seguridad-card {
+  max-width: 800px;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-top: 6px solid var(--corporate-yellow);
+}
+
+/* Título */
+.seguridad-title {
+  color: var(--corporate-dark);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.seguridad-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--corporate-yellow);
+}
+
+/* Estadísticas */
+.seguridad-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 180px;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--corporate-yellow);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  color: var(--corporate-dark);
+  font-weight: 500;
+}
+
+/* Mensaje */
+.seguridad-message {
+  color: var(--corporate-dark);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .seguridad-card {
+    padding: 1.5rem;
+  }
+  
+  .seguridad-title {
+    font-size: 1.8rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+  }
+  
+  .seguridad-message {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .seguridad-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .seguridad-title {
+    font-size: 1.5rem;
+  }
+}
