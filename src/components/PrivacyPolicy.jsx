@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
         <strong>Razón Social:</strong> Minera Phuyu Yuraq II<br />
         <strong>Dirección:</strong> Jr. Sor Manuela Gil K-2<br />
         <strong>Correo electrónico:</strong> minphuyuii@yahoo.es<br />
-        <strong>RUC:</strong> [coloca tu RUC si aplica]
+        <strong>RUC:</strong> 20224983043
       </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-2" style={{ color: "#FFC300" }}>
