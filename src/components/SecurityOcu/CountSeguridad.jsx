@@ -4,7 +4,7 @@ import './CountSeguridad.css';
 
 const CountSeguridad = () => {
   // Fecha de inicio de la pandemia (16 de marzo de 2020)
-  const pandemicStartDate = new Date('2020-03-16');
+  const pandemicStartDate = new Date('2022-03-16');
   const [daysWithoutAccidents, setDaysWithoutAccidents] = useState(0);
 
   // Calcular días desde la pandemia
@@ -47,8 +47,8 @@ const CountSeguridad = () => {
             viewport={{ once: true }}
             className="stat-item"
           >
-            <div className="stat-number">0</div>
-            <div className="stat-label">Accidentes laborales</div>
+            <div className="stat-number">9424</div>
+            <div className="stat-label">Horas Hombre Trabajadas</div>
           </motion.div>
 
           <motion.div
@@ -60,7 +60,7 @@ const CountSeguridad = () => {
             className="stat-item"
           >
             <div className="stat-number">{daysWithoutAccidents}</div>
-            <div className="stat-label">Días sin accidentes</div>
+            <div className="stat-label">Días útiles</div>
           </motion.div>
         </div>
 

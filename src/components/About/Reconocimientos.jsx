@@ -20,7 +20,7 @@ const reconocimientos = [
 const Reconocimientos = () => {
   return (
     <section className="reconocimientos-container">
-      <h2 className="reconocimientos-title">Reconocimientos</h2>
+      <h2 className="reconocimientos-title"> Algunos Reconocimientos</h2>
       <div className="reconocimientos-grid">
         {reconocimientos.map((item) => (
           <motion.div
