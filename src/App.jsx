@@ -15,7 +15,7 @@ import PoliticasPrivacidad from "./pages/PoliticasPrivacidad";
 import TerminosCondiciones from "./pages/TerminosCondiciones";
 import Whatsapp from "./components/whatsappbutton/Whatsapp";
 
-const MycalPage = () => {
+const YuraqPage = () => {
   return (
     <>
       <Whatsapp />
@@ -40,4 +40,4 @@ const MycalPage = () => {
   );
 };
 
-export default MycalPage;
+export default YuraqPage;
