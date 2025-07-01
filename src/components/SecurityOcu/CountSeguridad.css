@@ -48,6 +48,15 @@
   background-color: var(--corporate-yellow);
 }
 
+/* Sub Titulo*/
+.seguridad-subtitle {
+  font-weight: bold;
+  color: var(--corporate-dark);
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
 /* Estadísticas */
 .seguridad-stats {
   display: flex;

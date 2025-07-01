@@ -38,6 +38,7 @@ const CountSeguridad = () => {
         className="seguridad-card"
       >
         <h2 className="seguridad-title">Seguridad Industrial</h2>
+        <p className="seguridad-subtitle">Datos recabados desde el 2022</p>
         
         <div className="seguridad-stats">
           <motion.div
@@ -83,6 +84,7 @@ const CountSeguridad = () => {
         >
           En Minera P'huyu Yuraq II, la seguridad de nuestro equipo es nuestra máxima prioridad. 
           Trabajamos cada día para mantener un ambiente laboral seguro y saludable.
+      
         </motion.p>
       </motion.div>
     </div>
