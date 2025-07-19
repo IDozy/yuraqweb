@@ -1,8 +1,23 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import "./AmautasCard.css";
 
+const images = [
+  "/amautas_mineros.webp",
+  "/amautas2.webp",
+  "/amautas3.webp", // Cambia estas rutas según tus imágenes reales
+];
+
 const AmautasCard = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <motion.div
       className="card-container"
@@ -13,17 +28,33 @@ const AmautasCard = () => {
     >
       {/* Texto a la izquierda */}
       <div className="card-content">
-        <h2>Visita guiada para "Amautas Mineros"</h2>
+        <h2>Visitas guiadas para Grupos Estudiantiles</h2>
         <p>
-          Como parte de nuestro compromiso social, promovemos las visitas guiadas para cualquier
-          agrupación estudiantil interesada en conocer nuestras instalaciones. El grupo Amautas Mineros visitó nuestras instalaciones del centro de producción de Apan Alto, 
-          donde conocieron el funcionamiento y parte de la producción principal del lugar.
+          Extendemos una cordial invitación a todas las universidades e
+          institutos de formación minera, tanto a nivel local como nacional, a
+          participar en nuestras visitas guiadas. Como parte de nuestro
+          compromiso social y educativo, abrimos las puertas de nuestras
+          instalaciones para que agrupaciones estudiantiles conozcan de cerca
+          los procesos productivos y operativos de una empresa calera. Estas
+          visitas ofrecen una valiosa oportunidad para recorrer nuestras
+          plantas, interactuar con profesionales del sector y comprender el
+          funcionamiento real de la industria.
         </p>
       </div>
 
-      {/* Imagen a la derecha */}
+      {/* Imagen rotativa a la derecha */}
       <div className="card-image">
-        <img src="/amautas_mineros.webp" alt="Amautas mineros" />
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={images[index]}
+            src={images[index]}
+            alt={`Amautas Mineros ${index + 1}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          />
+        </AnimatePresence>
       </div>
     </motion.div>
   );

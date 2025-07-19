@@ -28,7 +28,7 @@ export default function SaludCard() {
     >
       {/* Texto */}
       <div className="campana-content">
-        <h2>Realización de campañas de salud</h2>
+        <h2>Campañas de Salud Comunitarias</h2>
         <p>
           Organizamos jornadas médicas gratuitas para brindar atención básica,
           orientación en prevención de enfermedades y entrega de medicamentos
